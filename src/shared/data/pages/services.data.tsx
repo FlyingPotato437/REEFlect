@@ -17,23 +17,23 @@ import {
   TestimonialsProps,
 } from '~/shared/types';
 
-import heroImg from '~/assets/images/hero.jpg';
-import cameraFrontImg from '~/assets/images/camera-front.jpg';
-import cameraBackImg from '~/assets/images/camera-back.jpg';
+import heroImg from '~/assets/images/photo-1595902392285-46fccaab598a_q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.jpg';
+import cameraFrontImg from '~/assets/images/IMG_5297_edited.png';
+import cameraBackImg from '~/assets/images/71728_edited.png';
 
 // Hero data on Services page *******************
 export const heroServices: HeroProps = {
-  title: 'Elevate your projects with our stunning templates',
+  title: 'Pojects at REEFlect',
   subtitle:
-    'Donec aliquam pharetra nibh quis vestibulum. Praesent hendrerit sem at lacus ullamcorper egestas. Morbi lacinia ipsum in nulla gravida, ac sagittis turpis pretium. ',
+    'REEFlect has many impactful projects. Here is some key information on them.',
   callToAction: {
     text: 'Start Exploring',
-    href: 'https://github.com/onwidget/tailnext',
+    href: 'https://reeflect.org/Services',
     targetBlank: true,
   },
   image: {
     src: heroImg,
-    alt: 'Hero TailNext',
+    alt: 'Hero Reeflect',
   },
 };
 
@@ -45,34 +45,34 @@ export const features2Services: FeaturesProps = {
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
-      description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
+      title: 'Real-Time Ocean Monitoring',
+      description: 'Utilizing advanced sensors and smart buoys to monitor ocean health parameters in real-time.',
       icon: IconBrandTailwind,
     },
     {
-      title: 'Ready-to-use Components',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Data Analytics and Visualization',
+      description: 'Providing comprehensive data analysis and visualization tools to interpret ocean health data.',
       icon: IconComponents,
     },
     {
-      title: 'Best Practices',
-      description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
+      title: 'Community Engagement Programs',
+      description: 'Organizing workshops and educational programs to raise awareness and promote ocean conservation such as our Childrens Book.',
       icon: IconListCheck,
     },
     {
-      title: 'Excellent Page Speed',
-      description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
+      title: 'Research Partnerships',
+      description: 'Collaborating with research institutions to enhance our understanding of ocean health.',
       icon: IconRocket,
     },
     {
-      title: 'Search Engine Optimization (SEO)',
+      title: 'Public Awareness Campaigns',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+        'Launching campaigns to inform the public about the importance of protecting our oceans.',
       icon: IconArrowsRightLeft,
     },
     {
-      title: 'Open to new ideas and contributions',
-      description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
+      title: 'Innovation and Technology Development',
+      description: 'Continuously developing and implementing new technologies to improve ocean conservation efforts.',
       icon: IconBulb,
     },
   ],
@@ -83,27 +83,27 @@ export const contentServicesOne: ContentProps = {
   id: 'contentOne-on-services-one',
   hasBackground: false,
   content:
-    'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+    'Reeflect leverages cutting-edge technology to monitor and protect ocean health. Our smart buoys and advanced sensors provide real-time data that supports scientific research and informs public awareness.',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Real-Time Data Collection',
       description:
-        'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+        'Our smart buoys collect data on temperature, pH, salinity, and other critical parameters, providing a comprehensive view of ocean health.',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Advanced Data Analysis',
       description:
-        'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+        'We use sophisticated data analytics to process and interpret the collected data, turning it into actionable insights.',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Community Involvement',
       description:
-        'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+        'We engage local communities through workshops and educational programs, empowering them to take part in ocean conservation.',
     },
   ],
   image: {
     src: cameraFrontImg,
-    alt: 'Colorful Image',
+    alt: 'Ocean Monitoring Equipment',
   },
   isReversed: true,
   isAfterContent: false,
@@ -114,30 +114,27 @@ export const contentServicesTwo: ContentProps = {
   id: 'contentOne-on-services-two',
   hasBackground: false,
   content:
-    'Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nib dissentias, mei exerci tamquam euripidis cu.',
+    'Through our partnerships with research institutions and our innovative technology, Reeflect is making significant strides in understanding and protecting our oceans.',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Research Collaborations',
+      description:
+        'We partner with leading research institutions to enhance the scope and impact of our data.',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Innovative Technology',
+      description:
+        'Our team continuously develops new technologies to improve the accuracy and efficiency of our monitoring efforts.',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
-    },
-    {
-      title: 'Per ei quaeque sensibus',
-    },
-    {
-      title: 'Cu imperdiet posidonium sed',
-    },
-    {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Public Education',
+      description:
+        'We believe in the power of education to drive change. Our programs aim to educate kids about ocean awareness.',
     },
   ],
   image: {
     src: cameraBackImg,
-    alt: 'Colorful Image',
+    alt: 'Research Collaboration',
   },
   isReversed: false,
   isAfterContent: true,
@@ -151,43 +148,43 @@ export const features4Services: FeaturesProps = {
   header: {
     title: 'Main Features',
     subtitle:
-      'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+      'Reeflect offers a range of services designed to monitor, analyze, and protect ocean health through innovative technology and community engagement.',
   },
   isImageDisplayed: true,
   image: {
     src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80',
-    alt: 'Hero TailNext',
+    alt: 'Ocean Conservation Technology',
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
-      description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
+      title: 'Real-Time Ocean Monitoring',
+      description: 'Utilizing advanced sensors and smart buoys to monitor ocean health parameters in real-time.',
       icon: IconBrandTailwind,
     },
     {
-      title: 'Ready-to-use Components',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Data Analytics and Visualization',
+      description: 'Providing comprehensive data analysis and visualization tools to interpret ocean health data.',
       icon: IconComponents,
     },
     {
-      title: 'Best Practices',
-      description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
+      title: 'Community Engagement Programs',
+      description: 'Organizing workshops and educational programs to raise awareness and promote ocean conservation.',
       icon: IconListCheck,
     },
     {
-      title: 'Excellent Page Speed',
-      description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
+      title: 'Research Partnerships',
+      description: 'Collaborating with research institutions to enhance our understanding of ocean health.',
       icon: IconRocket,
     },
     {
-      title: 'Search Engine Optimization (SEO)',
+      title: 'Public Awareness Campaigns',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+        'Launching campaigns to inform the public about the importance of protecting our oceans.',
       icon: IconArrowsRightLeft,
     },
     {
-      title: 'Open to new ideas and contributions',
-      description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
+      title: 'Innovation and Technology Development',
+      description: 'Continuously developing and implementing new technologies to improve ocean conservation efforts.',
       icon: IconBulb,
     },
   ],
@@ -195,19 +192,19 @@ export const features4Services: FeaturesProps = {
 
 // Testimonials data on Services page *******************
 export const testimonialsServices: TestimonialsProps = {
-  id: 'testimonials-on-home',
+  id: 'testimonials-on-services',
   hasBackground: false,
   isTestimonialUp: true,
   header: {
-    title: 'Satisfied Client Experiences',
+    title: 'Community Feedback',
     subtitle:
-      'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
+      'See what our partners and participants have to say about our initiatives.',
   },
   testimonials: [
     {
       name: 'Silver Jordan',
-      job: 'Senior Marketer',
-      testimonial: `I had never found it so easy to customize a website. TailNext's templates are incredibly flexible, and with Tailwind CSS, I've managed to give my website the look and feel I always wanted. Highly recommended!`,
+      job: 'Marine Scientist',
+      testimonial: `Reeflect's technology has revolutionized our research. The real-time data we receive from their smart buoys is invaluable.`,
       image: {
         src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Silver Jordan',
@@ -216,8 +213,8 @@ export const testimonialsServices: TestimonialsProps = {
     },
     {
       name: 'Sarah Johnson',
-      job: 'Business Owner',
-      testimonial: `They've not only saved me a ton of time but have also made my websites look incredibly professional. The level of detail and thought that went into designing these templates is truly impressive.`,
+      job: 'Environmental Activist',
+      testimonial: `Reeflect's educational programs have made a huge impact in our community, raising awareness and inspiring action.`,
       image: {
         src: 'https://images.unsplash.com/photo-1572417884940-c24659be6068?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Sarah Johnson',
@@ -226,8 +223,8 @@ export const testimonialsServices: TestimonialsProps = {
     },
     {
       name: 'Lisa Gordon',
-      job: 'Project Manager',
-      testimonial: `Their templates are not only stunning but also user-friendly. The support I received from their community has been exceptional. I'm proud to say that I've built my dream website with TailNext.`,
+      job: 'Community Leader',
+      testimonial: `The workshops and events hosted by Reeflect have been incredibly educational and engaging. Our community has learned so much about ocean conservation.`,
       image: {
         src: 'https://images.unsplash.com/photo-1665984867752-6370ab5ae35e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Lisa Gordon',
@@ -238,7 +235,7 @@ export const testimonialsServices: TestimonialsProps = {
   callToAction: {
     targetBlank: true,
     text: 'More testimonials...',
-    href: '/',
+    href: '/testimonials',
   },
 };
 
@@ -249,28 +246,33 @@ export const faqsServices: FAQsProps = {
   header: {
     title: 'Answers to Common Queries',
     subtitle:
-      'Etiam laoreet mi eros, vitae iaculis mi egestas blandit. Sed nisl diam, congue sed justo et, cursus sollicitudin ligula.',
+      'Find answers to frequently asked questions about our services and mission.',
   },
   columns: 1,
   items: [
     {
-      title: 'Can I customize the templates to match my brand?',
-      description: `Ut accumsan, massa at sagittis maximus, libero justo rhoncus metus, quis finibus neque justo quis nisi. Suspendisse sed sapien et justo iaculis faucibus.`,
+      title: 'What services does Reeflect offer?',
+      description: `Reeflect offers real-time ocean monitoring, data analytics and visualization, community engagement programs, research partnerships, public awareness campaigns, and continuous innovation in technology development.`,
       icon: IconChevronsRight,
     },
     {
-      title: 'What if I need help customizing the template?',
-      description: `Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent imperdiet ultricies ex consequat egestas.`,
+      title: 'How can I get involved with Reeflect?',
+      description: `You can get involved by participating in our community programs, attending our workshops, volunteering, or partnering with us for research and conservation initiatives.`,
       icon: IconChevronsRight,
     },
     {
-      title: 'Are there setup guides available?',
-      description: `Mauris vitae eros a dui varius luctus. Suspendisse rutrum, sapien nec blandit bibendum, justo sapien sollicitudin erat, id aliquam sapien purus quis leo. Aliquam vulputate vestibulum consectetur.`,
+      title: 'How does Reeflect collect ocean data?',
+      description: `We deploy smart buoys equipped with advanced sensors that collect real-time data on various ocean health parameters such as temperature, pH, salinity, and pollutants.`,
       icon: IconChevronsRight,
     },
     {
-      title: 'Can I hire you for template customization?',
-      description: `Phasellus est quam, mollis tincidunt dictum pulvinar, tempor vel justo. Mauris eu lobortis leo. Proin pretium arcu lectus, a mattis nisi fermentum quis.`,
+      title: 'How is the collected data used?',
+      description: `The collected data is analyzed and visualized to provide insights into ocean health. It is used for scientific research, public awareness campaigns, and to inform policy-making for ocean conservation.`,
+      icon: IconChevronsRight,
+    },
+    {
+      title: 'How does Reeflect ensure data accuracy?',
+      description: `We use state-of-the-art sensors and rigorous data validation methods to ensure the accuracy and reliability of the data we collect.`,
       icon: IconChevronsRight,
     },
   ],
@@ -282,7 +284,7 @@ export const callToActionServices: CallToActionProps = {
   hasBackground: false,
   title: 'Still have questions?',
   subtitle:
-    'Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut in leo odio. Cras finibus ex a ante convallis ullamcorper.',
+    'If you have any more questions or need further information, feel free to reach out to us.',
   callToAction: {
     text: 'Contact us',
     href: '/contact',

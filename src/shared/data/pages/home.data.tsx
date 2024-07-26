@@ -28,39 +28,35 @@ import {
   TeamProps,
   TestimonialsProps,
 } from '../../types';
-import heroImg from '~/assets/images/hero.jpg';
+import heroImg from '~/assets/images/frank-mckenna-OD9EOzfSOh0-unsplash.jpg';
 import nextJsLogo from '~/assets/images/nextjs-logo.png';
 import reactLogo from '~/assets/images/react-logo.png';
 import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
-import cameraFrontImg from '~/assets/images/camera-front.jpg';
-import cameraBackImg from '~/assets/images/camera-back.jpg';
-import gasImg from '~/assets/images/gas.jpg';
+import cameraFrontImg from '~/assets/images/girma-nigusse-dnXVrFuM3c8-unsplash.jpg';
+import cameraBackImg from '~/assets/images/pedro-lastra-br-Xdb9KE0Q-unsplash.jpg';
+import gasImg from '~/assets/images/Screenshot 2024-07-18 at 12.26.25 AM.png';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
   title: (
     <>
-      Free template for <span className="hidden md:inline">starts a website using</span> <span>Next.js</span> +{' '}
-      <span className="sm:whitespace-nowrap">Tailwind CSS</span>
+      REEFlect <span className="hidden md:inline"></span> <span></span>{' '}
+      <span className="sm:whitespace-nowrap"></span>
     </>
   ),
   subtitle: (
     <>
       <span className="hidden md:inline">
         <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          TailNext
         </span>{' '}
-        is a production ready template to start your new website using <em>Next.js</em> + <em>Tailwind CSS</em>.
+        A High Schooler led 501(c)(3) non profit to help take care of our oceans using modern technology <em></em><em></em>
       </span>{' '}
-      It has been designed following Best Practices, SEO, Accessibility, Dark Mode, great Page Speed, image
-      optimization.
     </>
   ),
   callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
+    text: 'Contact us',
+    href: 'reeflect.org',
     targetBlank: true,
   },
   callToAction2: {
@@ -109,73 +105,31 @@ export const featuresHome: FeaturesProps = {
   header: {
     title: (
       <>
-        What you get with <span className="whitespace-nowrap">TailNext</span>
+        REEFlects Projects<span className="whitespace-nowrap"></span>
       </>
     ),
     subtitle:
-      "Elevating Your Digital Presence: Discover the Synergies Unleashed in Our Platform's Core Strengths, from Seamless Integration to Open Collaboration.",
-    tagline: 'Features',
+      "REEFlect has 3 main projects to help promote its mission. Here is a brief overview on our key projects.",
+    tagline: 'Projects',
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
+      title: 'Beach Cleanups',
       description:
-        'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-      icon: IconBrandTailwind,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Ready-to-use Components',
-      description:
-        'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-      icon: IconComponents,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Best Practices',
-      description:
-        'By prioritizing maintainability and scalability through coding standards and design principles, your website stays robust and efficient.',
-      icon: IconListCheck,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Excellent Page Speed',
-      description:
-        'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+        'A beach clean up initiative is a great way to make a positive impact on the environment and the community. By organizing a beach clean up, you can help protect marine life, reduce pollution, and promote sustainability. Whether youre a group of friends, a local organization, or a business, a beach clean up initiative is a fun and rewarding way to give back to the community and make a difference.',
       icon: IconRocket,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
     },
     {
-      title: 'Search Engine Optimization (SEO)',
+      title: 'Raising Awareness',
       description:
-        "Boost online visibility with our SEO-friendly website. Effective strategies and practices enhance your website's search engine ranking, making it easier for users to find your content.",
+        "Our organization is committed to raising awareness about pollution and its impact on the environment Through various campaigns and initiatives, we strive to educate individuals and communities on the importance of reducing pollution and taking steps towards a cleaner, healthier planet. Join us in our mission to create a sustainable future for generations to come.",
       icon: IconArrowsRightLeft,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
     },
     {
-      title: 'Open to new ideas and contributions',
+      title: 'Custom Buoys',
       description:
-        'We welcome new ideas and contributions to our platform. Whether you have feature suggestions, want to contribute code, or share insights, our platform is open for collaboration.',
+        'Our custom buoy initiative is revolutionizing the way we collect data about our oceans. By utilizing sensors in our buoys, we are able to capture valuable information and send it directly to national ocean organizations. This data is crucial in helping us better understand and protect our oceans for future generations.',
       icon: IconBulb,
-      callToAction: {
-        text: 'Discover now',
-        href: '/',
-      },
     },
   ],
 };
@@ -185,27 +139,27 @@ export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',
   hasBackground: true,
   header: {
-    title: 'Aliquip definiebas ad est',
-    subtitle: 'Quando cetero his ne, eum admodum sapientem ut',
+    title: 'Project Details',
+    subtitle: 'Specific Information about our Beach Cleanup, Buoy Initiatives, and Ocean Awareness Intiatives',
     tagline: 'Content',
   },
   content:
-    'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+    'Our Tech Projects',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Buoy',
       description:
-        'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+        'Our Buoy initiaitve is an initiative where we deploy custom buoys to collect data on the ocean',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Ecomonitor AI',
       description:
-        'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+        'Eco Monitor AI is a project where we make machine learning accesible to those in the browser to easily predict ecological datapoints based on data that is avalible to the public.',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Deploy',
       description:
-        'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+        'share data and more cool stuff',
     },
   ],
   image: {
@@ -221,25 +175,16 @@ export const contentHomeTwo: ContentProps = {
   id: 'contentOne-on-home-two',
   hasBackground: true,
   content:
-    'Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nib dissentias, mei exerci tamquam euripidis cu.',
+    'Beach Cleanup Initiative',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'We want to help keep our beaches clean with the help of other organizations and volunteers',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'If you want to join us as a volunteer or as a partner, please contact us',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
-    },
-    {
-      title: 'Per ei quaeque sensibus',
-    },
-    {
-      title: 'Cu imperdiet posidonium sed',
-    },
-    {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'We appreciate any help we can get to keep our oceans safe',
     },
   ],
   image: {
@@ -261,29 +206,29 @@ export const stepsHome: StepsProps = {
     alt: 'Steps image',
   },
   header: {
-    title: 'Sed ac magna sit amet risus tristique interdum.',
+    title: 'Raise Global Ocean Awareness',
   },
   items: [
     {
-      title: 'Step 1',
+      title: 'We wrote a book on increase Ocean Awareness to children',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
+        '',
       icon: IconArrowDown,
     },
     {
-      title: 'Step 2',
+      title: 'We plan to present this book to local elementary schools in the area to help teach kids about the environment at a young age',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+        '',
       icon: IconArrowDown,
     },
     {
-      title: 'Step 3',
+      title: 'With Increased Awareness, we hope to increase the number of volunteers and partners we have to help us with our mission',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+        '',
       icon: IconArrowDown,
     },
     {
-      title: 'Ready!',
+      title: 'With the help of our partners and volunteers, we hope to globalize our mission and help raise awareness on a global scale',
     },
   ],
 };
@@ -295,7 +240,7 @@ export const testimonialsHome: TestimonialsProps = {
   header: {
     title: 'What our customers say about us',
     subtitle:
-      'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
+      'our beauytiful and hnandsome awesome team members exc.',
   },
   testimonials: [
     {
@@ -496,7 +441,7 @@ export const teamHome: TeamProps = {
   header: {
     title: 'Team Members',
     subtitle:
-      'Suspendisse in dui nibh. Donec enim leo, sodales et egestas id, malesuada non diam. Sed dapibus velit et mauris condimentum, vel imperdiet erat egestas.',
+      'our beauytiful and hnandsome awesome team members which is just srikanth',
     // tagline: 'Team',
   },
   teams: [
@@ -504,7 +449,7 @@ export const teamHome: TeamProps = {
       name: 'Cindy Belcher',
       occupation: 'SEO Consultant',
       image: {
-        src: 'https://images.unsplash.com/photo-1637858868799-7f26a0640eb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        src: 'https://images.unsplash.com/photo-1534303891689-1fb2f8155c70?q=80&w=3731&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         alt: 'Cindy Belcher',
       },
       items: [
@@ -608,20 +553,20 @@ export const contactHome: ContactProps = {
   hasBackground: true,
   header: {
     title: 'Get in Touch',
-    subtitle: 'In hac habitasse platea dictumst',
+    subtitle: 'We would love to hear from you!',
     tagline: 'Contact',
   },
   content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+    'We would love to hear from you! Whether you have questions, want to get involved, or are interested in partnering with us, please don’t hesitate to reach out.',
   items: [
     {
       title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      description: ['In Progress'],
       icon: IconMapPin,
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      description: ['Mobile: +1 (925) 503 8351)', 'Mail: srikanth.samy008@gmail.com'],
       icon: IconPhoneCall,
     },
     {

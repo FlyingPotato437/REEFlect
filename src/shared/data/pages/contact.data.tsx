@@ -7,11 +7,11 @@ export const heroContact: HeroProps = {
   title: 'Get in touch with us',
   subtitle: (
     <>
-      <span className="hidden md:inline">{`Thank you for considering us for your project! We're excited to hear from you.`}</span>{' '}
-      {`Our team can assist you in building your dream website.`}
+      <span className="hidden md:inline">{`Thank you for considering Reeflect! We're excited to hear from you.`}</span>{' '}
+      {`Our team is ready to assist you in all your ocean conservation needs.`}
     </>
   ),
-  tagline: 'Demo Contact Page',
+  tagline: 'Contact Reeflect',
 };
 
 // Contact data on Contact page *******************
@@ -30,17 +30,17 @@ export const contact2Contact: ContactProps = {
   items: [
     {
       title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      description: ['123 Ocean Avenue', 'San Francisco, CA, USA'],
       icon: IconMapPin,
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      description: ['Phone: +1 (123) 456-7890', 'Email: info@reeflect.org'],
       icon: IconPhoneCall,
     },
     {
       title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+      description: ['Monday - Friday: 9:00 AM - 5:00 PM', 'Saturday: 10:00 AM - 2:00 PM'],
       icon: IconClock,
     },
   ],
@@ -50,7 +50,7 @@ export const contact2Contact: ContactProps = {
       {
         type: 'text',
         label: 'First name',
-        name: 'name',
+        name: 'firstName',
         autocomplete: 'off',
         placeholder: 'First name',
       },
@@ -79,7 +79,7 @@ export const contact2Contact: ContactProps = {
           label: 'Technical help',
         },
         {
-          label: 'Claims',
+          label: 'Partnerships',
         },
         {
           label: 'Others',
@@ -90,16 +90,16 @@ export const contact2Contact: ContactProps = {
       cols: 30,
       rows: 5,
       label: 'How can we help you?',
-      name: 'textarea',
+      name: 'message',
       placeholder: 'Write your message...',
     },
     checkboxes: [
       {
-        label: 'Have you read our privacy policy?',
+        label: 'I have read and agree to the privacy policy',
         value: '',
       },
       {
-        label: 'Do you want to receive monthly updates by email?',
+        label: 'I want to receive monthly updates by email',
         value: '',
       },
     ],
@@ -133,7 +133,7 @@ export const features2Contact: FeaturesProps = {
       icon: IconMessages,
       callToAction: {
         text: 'Write to us',
-        href: '/',
+        href: '/contact',
       },
     },
     {
@@ -142,7 +142,7 @@ export const features2Contact: FeaturesProps = {
       icon: IconHeadset,
       callToAction: {
         text: 'Call us',
-        href: '/',
+        href: 'tel:+11234567890',
       },
     },
   ],
