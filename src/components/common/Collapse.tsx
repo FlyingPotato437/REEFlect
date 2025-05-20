@@ -1,11 +1,22 @@
 'use client';
 
-import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
+import { IconChevronDown, IconChevronUp, IconMinus, IconPlus, type TablerIcon } from '@tabler/icons-react';
 import useCollapse from '~/hooks/useCollapse';
 import { CollapseProps } from '~/shared/types';
+import React from 'react';
+
+const iconMap: { [key: string]: TablerIcon } = {
+  IconMinus,
+  IconPlus,
+  IconChevronDown,
+  IconChevronUp,
+};
 
 const Collapse = ({ items, classCollapseItem, iconUp, iconDown }: CollapseProps) => {
   const { activeIndex, handleSetIndex } = useCollapse();
+
+  const IconUpComponent = typeof iconUp === 'string' ? iconMap[iconUp] : iconUp;
+  const IconDownComponent = typeof iconDown === 'string' ? iconMap[iconDown] : iconDown;
 
   return (
     <>
@@ -25,11 +36,11 @@ const Collapse = ({ items, classCollapseItem, iconUp, iconDown }: CollapseProps)
               role="button"
             >
               <h2 className="w-full pr-2 text-lg font-medium leading-6 text-gray-900 dark:text-slate-300">{title}</h2>
-              {iconDown && iconUp ? (
+              {IconDownComponent && IconUpComponent ? (
                 activeIndex === index ? (
-                  iconUp
+                  <IconUpComponent className="h-6 w-6 text-primary-600 dark:text-slate-200" />
                 ) : (
-                  iconDown
+                  <IconDownComponent className="h-6 w-6 text-primary-600 dark:text-slate-200" />
                 )
               ) : activeIndex === index ? (
                 <IconChevronUp className="h-6 w-6 text-primary-600 dark:text-slate-200" />

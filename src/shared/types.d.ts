@@ -254,8 +254,8 @@ type FAQsProps = Widget & {
 type CollapseProps = {
   items: Array<Item>;
   classCollapseItem?: string;
-  iconUp?: ReactElement;
-  iconDown?: ReactElement;
+  iconUp?: Icon;
+  iconDown?: Icon;
 };
 
 type CallToActionProps = Widget & {
