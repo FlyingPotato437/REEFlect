@@ -46,7 +46,7 @@ import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
 import cameraFrontImg from '~/assets/images/girma-nigusse-dnXVrFuM3c8-unsplash.jpg';
 import cameraBackImg from '~/assets/images/Screenshot 2024-09-22 at 4.57.57 PM.png';
-import gasImg from '~/assets/images/Screenshot 2024-07-18 at 12.26.25 AM.png';
+import gasImg from '~/assets/images/OceansCry.png';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
@@ -136,7 +136,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'Securing Our Future: Recent Funding',
       description:
-        "Proud recipients of $15,000 from the Awesome Foundation and $11,517 in community funding, fueling our conservation efforts and technological development.",
+        "yo we have raised over 15k from various sources such as Awesome Foundation, and 1517 Fund",
       icon: 'IconAward',
     },
   ],
