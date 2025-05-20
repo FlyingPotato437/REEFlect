@@ -19,8 +19,8 @@ import {
   TestimonialsProps,
 } from '~/shared/types';
 
-import heroImg from '~/assets/images/Screenshot 2024-09-22 at 5.04.44 PM.png';
-import cameraFrontImg from '~/assets/images/Screenshot 2024-09-22 at 4.59.58 PM.png';
+import heroImg from '~/assets/images/KrishivlikesBags.png';
+import cameraFrontImg from '~/assets/images/New1.png';
 import cameraBackImg from '~/assets/images/Screenshot 2024-09-22 at 5.05.26 PM.png';
 
 // Hero data on Services page *******************

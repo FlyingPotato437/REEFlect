@@ -53,10 +53,10 @@ import {
 } from '@tabler/icons-react';
 
 // Image Imports
-import hero2Img from '~/assets/images/Screenshot 2024-09-22 at 5.02.00 PM.png'; // Using ~ alias and standard space
+import hero2Img from '~/assets/images/REEFlect1.png'; // Using ~ alias and standard space
 //import hero2ImgPlaceholder from '~/assets/images/girma-nigusse-dnXVrFuM3c8-unsplash.jpg';
 import srikanthCleanupImg from '~/assets/images/SrikanthCleanup.png';
-import krishivServicesHeroImg from '~/assets/images/Screenshot 2024-09-22 at 5.04.44 PM.png'; // Using ~ alias and standard space
+import krishivServicesHeroImg from '~/assets/images/KrishivlikesBags.png'; // Using ~ alias and standard space
 import adiPicImg from '~/assets/images/adipic.png';
 // import aaryanimg from '~/assets/images/newcmopic.png'; // Aanya Sheth removed
 import cleanupGenericImg from '~/assets/images/cleanup.png';

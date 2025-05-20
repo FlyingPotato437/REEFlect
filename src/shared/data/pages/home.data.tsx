@@ -38,7 +38,7 @@ import {
 } from '../../types';
 import heroImgHome from '~/assets/images/Screenshot 2024-09-22 at 4.55.33 PM.png';
 import srikanthCleanupImg from '~/assets/images/SrikanthCleanup.png';
-import krishivServicesHeroImg from '~/assets/images/Screenshot 2024-09-22 at 5.04.44 PM.png';
+import krishivServicesHeroImg from '~/assets/images/KrishivlikesBags.png';
 import adiPicImg from '~/assets/images/adipic.png';
 import nextJsLogo from '~/assets/images/nextjs-logo.png';
 import reactLogo from '~/assets/images/react-logo.png';
