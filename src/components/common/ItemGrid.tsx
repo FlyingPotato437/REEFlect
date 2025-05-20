@@ -117,7 +117,7 @@ const ItemGrid = ({
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.25 }}
           className={twMerge(
             `grid mx-auto gap-8 md:gap-y-12 ${
               (columns || defaultColumns) === 4

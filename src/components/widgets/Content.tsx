@@ -31,7 +31,7 @@ const Content = ({
           className="self-center md:basis-1/2"
           initial={{ opacity: 0, x: isReversed ? 50 : -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           {content && <div className="mb-8 lg:mb-12 text-lg text-gray-600 dark:text-slate-400">{content}</div>}
@@ -51,7 +51,7 @@ const Content = ({
           className="mt-10 md:mt-0 md:basis-1/2"
           initial={{ opacity: 0, x: isReversed ? -50 : 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           {image && (

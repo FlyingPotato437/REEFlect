@@ -303,7 +303,7 @@ export const callToActionVolunteer: CallToActionProps = {
   hasBackground: true,
   title: 'Join Our Wave of Change',
   subtitle:
-    "REEFlect is powered by passionate volunteers across marketing, engineering, design, and international chapters. We provide structured onboarding and training tracks to help you make a meaningful impact. Fill out our Typeform to get started!",
+    'REEFlect is powered by passionate volunteers across marketing, engineering, design, and international chapters. We provide structured onboarding and training tracks to help you make a meaningful impact. Fill out our <a href="https://vke4l91re98.typeform.com/to/HhXKC86e" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Typeform</a> to get started!',
   callToAction: {
     text: 'Become a Volunteer',
     href: 'https://vke4l91re98.typeform.com/to/HhXKC86e',

@@ -28,7 +28,7 @@ const Steps = ({
         }`}
         initial={{ opacity: 0, x: isReversed && isImageDisplayed ? 50 : (isImageDisplayed ? -50 : 0) }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         {header && (
@@ -46,7 +46,7 @@ const Steps = ({
           className="relative md:basis-1/2"
           initial={{ opacity: 0, x: isReversed ? -50 : 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           {image && (

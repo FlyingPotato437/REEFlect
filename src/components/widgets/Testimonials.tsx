@@ -38,7 +38,7 @@ const Testimonials = ({
       variants={containerVariants}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once: true, amount: 0.25 }}
     >
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
         {testimonials.map(
@@ -95,7 +95,7 @@ const Testimonials = ({
       <motion.div
         initial={{ opacity: 0, y: 20}}
         whileInView={{ opacity: 1, y: 0}}
-        viewport={{ once: true, amount: 0.1 }}
+        viewport={{ once: true, amount: 0.25 }}
         transition={{ duration: 0.5, delay: testimonials.length * 0.1 + 0.2}}
       >
         <CTA
