@@ -328,7 +328,7 @@ export const testimonials2About: TestimonialsProps = {
     {
       name: 'Awesome Foundation Trustee',
       job: 'Funding Partner',
-      testimonial: `REEFlect's proposal for their smart buoy technology and community engagement stood out. We are proud to support their innovative work with a $15,000 grant to help protect our oceans.`,
+      testimonial: `REEFlect\'s proposal for their smart buoy technology and community engagement stood out. We are proud to support their innovative work to help protect our oceans.`,
       image: {
         src: 'https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
         alt: 'Funding Impact',
@@ -354,7 +354,7 @@ export const faqsAbout: FAQsProps = {
     },
     {
       title: 'How does REEFlect utilize its funding?',
-      description: `All funding, including grants like the $15,000 from the Awesome Foundation and over $11,517 from community support, directly supports our project deployments (like smart buoys in Ghana), R&D, educational programs, and operational costs for scaling our impact.`,
+      description: `All funding, including grants from organizations like the Awesome Foundation and significant community support, directly supports our project deployments (like smart buoys in Ghana), R&D, educational programs, and operational costs for scaling our impact.`,
     },
     {
       title: 'What are REEFlect\'s key areas of technological innovation?',
