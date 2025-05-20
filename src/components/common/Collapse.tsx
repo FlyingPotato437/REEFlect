@@ -54,7 +54,7 @@ const Collapse = ({ items, classCollapseItem, iconUp, iconDown }: CollapseProps)
                 aria-labelledby={`accordion__heading-${index}`}
                 id={`accordion__panel-${index}`}
               >
-                <p className="mt-2 text-gray-600 dark:text-slate-400">{description}</p>
+                <p className="mt-2 text-gray-600 dark:text-slate-400" dangerouslySetInnerHTML={{ __html: description || '' }}></p>
               </div>
             )}
           </div>
