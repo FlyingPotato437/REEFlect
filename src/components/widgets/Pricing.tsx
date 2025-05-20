@@ -50,7 +50,7 @@ const Pricing = ({ header, prices, id, hasBackground = false }: PricingProps) =>
                             id={id}
                             items={items}
                             columns={1}
-                            defaultIcon={IconCheck}
+                            defaultIcon="IconCheck"
                             containerClass="gap-2 md:gap-y-2"
                             panelClass="flex items-start"
                             iconClass="w-4 h-4 mt-1.5 mr-3 rtl:mr-0 rtl:ml-3 flex items-center justify-center rounded-full border-2 border-primary-600 bg-primary-600 text-white dark:text-slate-200"
