@@ -68,7 +68,7 @@ const ItemTestimonial = ({
         ) : null}
 
         {testimonialContent && (
-          <motion.blockquote 
+          <motion.blockquote
             className={twMerge(
               'flex-auto py-4 text-lg leading-relaxed text-gray-700 dark:text-slate-400',
               testimonialClass,
@@ -76,9 +76,8 @@ const ItemTestimonial = ({
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.3 }}
+            dangerouslySetInnerHTML={{ __html: testimonialContent || '' }}
           >
-            {testimonialContent}
-            {endSlice && testimonial && endSlice < testimonial.length ? '…' : ''}
           </motion.blockquote>
         )}
 
