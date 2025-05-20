@@ -53,10 +53,10 @@ import {
 } from '@tabler/icons-react';
 
 // Image Imports
-import hero2Img from '/Users/srikanthsamy1/Desktop/CodeProjects/REEFlect/tailnext/src/assets/images/Screenshot 2024-09-22 at 5.02.00 PM.png'; // UNCOMMENTED and path corrected with U+202F
+import hero2Img from '~/assets/images/Screenshot 2024-09-22 at 5.02.00 PM.png'; // Using ~ alias and standard space
 //import hero2ImgPlaceholder from '~/assets/images/girma-nigusse-dnXVrFuM3c8-unsplash.jpg';
 import srikanthCleanupImg from '~/assets/images/SrikanthCleanup.png';
-import krishivServicesHeroImg from '/Users/srikanthsamy1/Desktop/CodeProjects/REEFlect/tailnext/src/assets/images/Screenshot 2024-09-22 at 5.04.44 PM.png'; // Path corrected with U+202F
+import krishivServicesHeroImg from '~/assets/images/Screenshot 2024-09-22 at 5.04.44 PM.png'; // Using ~ alias and standard space
 import adiPicImg from '~/assets/images/adipic.png';
 // import aaryanimg from '~/assets/images/newcmopic.png'; // Aanya Sheth removed
 import cleanupGenericImg from '~/assets/images/cleanup.png';
