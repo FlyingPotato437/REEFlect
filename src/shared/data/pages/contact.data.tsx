@@ -31,17 +31,17 @@ export const contact2Contact: ContactProps = {
     {
       title: 'Our Address',
       description: ['123 Ocean Avenue', 'San Francisco, CA, USA'],
-      icon: IconMapPin,
+      icon: 'IconMapPin',
     },
     {
       title: 'Contact',
       description: ['Phone: +1 (123) 456-7890', 'Email: info@reeflect.org'],
-      icon: IconPhoneCall,
+      icon: 'IconPhoneCall',
     },
     {
       title: 'Working hours',
       description: ['Monday - Friday: 9:00 AM - 5:00 PM', 'Saturday: 10:00 AM - 2:00 PM'],
-      icon: IconClock,
+      icon: 'IconClock',
     },
   ],
   form: {
@@ -121,7 +121,7 @@ export const features2Contact: FeaturesProps = {
     {
       title: 'Have a question?',
       description: 'See our frequently asked questions',
-      icon: IconHelp,
+      icon: 'IconHelp',
       callToAction: {
         text: 'Go to FAQ page',
         href: '/faqs',
@@ -130,7 +130,7 @@ export const features2Contact: FeaturesProps = {
     {
       title: 'Chat with us',
       description: 'Live chat with our support team',
-      icon: IconMessages,
+      icon: 'IconMessages',
       callToAction: {
         text: 'Write to us',
         href: '/contact',
@@ -139,7 +139,7 @@ export const features2Contact: FeaturesProps = {
     {
       title: 'Get help',
       description: 'Speak to our team today',
-      icon: IconHeadset,
+      icon: 'IconHeadset',
       callToAction: {
         text: 'Call us',
         href: 'tel:+11234567890',
