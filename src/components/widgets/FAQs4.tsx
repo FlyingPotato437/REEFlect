@@ -57,8 +57,8 @@ const FAQs4 = ({ header, tabs, id, hasBackground = false }: FAQsProps) => {
                   <Collapse
                     items={tab.items as Item[]}
                     classCollapseItem="border-b border-solid border-slate-300 dark:border-slate-500 py-5"
-                    iconUp={<IconMinus className="h-6 w-6 text-primary-600 dark:text-slate-200" />}
-                    iconDown={<IconPlus className="h-6 w-6 text-primary-600 dark:text-slate-200" />}
+                    iconUp="IconMinus"
+                    iconDown="IconPlus"
                   />
                 )}
               </div>
