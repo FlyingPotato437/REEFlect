@@ -41,15 +41,19 @@ const Contact = ({ header, content, items, form, id, hasBackground = false }: Co
                     <div className="ml-4 rtl:ml-0 rtl:mr-4 mb-4">
                       <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">{title}</h3>
                       {typeof description === 'string' ? (
-                        <p key={`text-description-${index}`} className="text-gray-600 dark:text-slate-400">
-                          {description}
-                        </p>
+                        <p
+                          key={`text-description-${index}`}
+                          className="text-gray-600 dark:text-slate-400"
+                          dangerouslySetInnerHTML={{ __html: description || '' }}
+                        ></p>
                       ) : (
                         description &&
-                        description.map((desc, index) => (
-                          <p key={`text-description-${index}`} className="text-gray-600 dark:text-slate-400">
-                            {desc}
-                          </p>
+                        description.map((desc, i) => (
+                          <p
+                            key={`text-description-${index}-${i}`}
+                            className="text-gray-600 dark:text-slate-400"
+                            dangerouslySetInnerHTML={{ __html: desc || '' }}
+                          ></p>
                         ))
                       )}
                     </div>
