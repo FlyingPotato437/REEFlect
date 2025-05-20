@@ -44,7 +44,7 @@ export default function RootLayout({ children }: LayoutProps) {
         <meta property="og:image" content={`${SITE.url}/important.png`} />
         <SEO title={SITE.title} description={SITE.description} url={SITE.url} /> {/* Add the SEO component here */}
       </Head>
-      <body className="tracking-tight antialiased text-gray-900 dark:text-slate-300 dark:bg-slate-900">
+      <body className="tracking-tight antialiased text-gray-900 dark:text-slate-300 dark:bg-slate-900" suppressHydrationWarning>
         <Providers>
           <Announcement />
           <Header />
