@@ -25,7 +25,7 @@ import {
   researchDevelopmentAbout, // New section
   volunteerProgramAbout, // New section
   patchArticleAboutCTA, // New section
-  stepsAbout, // Kept as is for now, original content was generic journey
+  // stepsAbout, // Kept as is for now, original content was generic journey - Commenting out due to build error
   // features3About, // Original "Our Culture", can be re-added if desired
   // featuresAbout, // Original "Achievements", can be re-added or information merged
   teamAbout,
