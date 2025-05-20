@@ -1,8 +1,9 @@
 import {
   IconArrowDown,
   IconArrowsRightLeft,
+  IconBrandFacebook,
+  IconBrandInstagram,
   IconBrandLinkedin,
-  IconBrandTailwind,
   IconBrandTwitter,
   IconBulb,
   IconCheck,
@@ -14,6 +15,14 @@ import {
   IconMapPin,
   IconPhoneCall,
   IconRocket,
+  IconUsers,
+  IconMicroscope,
+  IconWorld,
+  IconDroplet,
+  IconMovie,
+  IconAward,
+  IconCash,
+  IconArticle,
 } from '@tabler/icons-react';
 import {
   CallToActionProps,
@@ -22,19 +31,21 @@ import {
   FAQsProps,
   FeaturesProps,
   HeroProps,
-  PricingProps,
   SocialProofProps,
   StepsProps,
   TeamProps,
   TestimonialsProps,
 } from '../../types';
-import heroImg from '~/assets/images/frank-mckenna-OD9EOzfSOh0-unsplash.jpg';
+import heroImgHome from '~/assets/images/Screenshot 2024-09-22 at 4.55.33 PM.png';
+import srikanthCleanupImg from '~/assets/images/SrikanthCleanup.png';
+import krishivServicesHeroImg from '~/assets/images/Screenshot 2024-09-22 at 5.04.44 PM.png';
+import adiPicImg from '~/assets/images/adipic.png';
 import nextJsLogo from '~/assets/images/nextjs-logo.png';
 import reactLogo from '~/assets/images/react-logo.png';
 import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
 import cameraFrontImg from '~/assets/images/girma-nigusse-dnXVrFuM3c8-unsplash.jpg';
-import cameraBackImg from '~/assets/images/pedro-lastra-br-Xdb9KE0Q-unsplash.jpg';
+import cameraBackImg from '~/assets/images/Screenshot 2024-09-22 at 4.57.57 PM.png';
 import gasImg from '~/assets/images/Screenshot 2024-07-18 at 12.26.25 AM.png';
 
 // Hero data on Home page *******************
@@ -55,17 +66,18 @@ export const heroHome: HeroProps = {
     </>
   ),
   callToAction: {
-    text: 'Contact us',
-    href: 'reeflect.org',
+    text: 'Get Involved',
+    href: 'https://vke4l91re98.typeform.com/to/HhXKC86e',
     targetBlank: true,
+    icon: 'IconUsers',
   },
   callToAction2: {
     text: 'Learn more',
-    href: '/',
+    href: '/about',
   },
   image: {
-    src: heroImg,
-    alt: 'Hero TailNext',
+    src: heroImgHome,
+    alt: 'Hero REEFlect',
   },
 };
 
@@ -97,39 +109,76 @@ export const socialProofHome: SocialProofProps = {
   ],
 };
 
-// Features data on Home page *******************
+// Features data on Home page (Key Projects) *******************
 export const featuresHome: FeaturesProps = {
   id: 'features-on-home',
-  hasBackground: false,
+  hasBackground: true,
   columns: 3,
   header: {
-    title: (
-      <>
-        REEFlects Projects<span className="whitespace-nowrap"></span>
-      </>
-    ),
+    title: 'Our Key Initiatives',
     subtitle:
-      "REEFlect has 3 main projects to help promote its mission. Here is a brief overview on our key projects.",
-    tagline: 'Projects',
+      "REEFlect is actively engaged in impactful projects to protect and understand our oceans. Here's a look at our main areas of focus and recent successes:",
+    tagline: 'Projects in Action',
   },
   items: [
     {
-      title: 'Beach Cleanups',
+      title: 'Smart Buoy Deployment',
       description:
-        'A beach clean up initiative is a great way to make a positive impact on the environment and the community. By organizing a beach clean up, you can help protect marine life, reduce pollution, and promote sustainability. Whether youre a group of friends, a local organization, or a business, a beach clean up initiative is a fun and rewarding way to give back to the community and make a difference.',
-      icon: IconRocket,
+        `Successfully deployed in Ghana, our smart buoys collect real-time sensor data. Designed to be open-source and low-cost for schools & NGOs. Data is openly shared via <a href="https://www.openoceans.life/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">openoceans.life</a>.`,
+      icon: 'IconDroplet',
     },
     {
-      title: 'Raising Awareness',
+      title: 'Global Outreach & Engagement',
       description:
-        "Our organization is committed to raising awareness about pollution and its impact on the environment Through various campaigns and initiatives, we strive to educate individuals and communities on the importance of reducing pollution and taking steps towards a cleaner, healthier planet. Join us in our mission to create a sustainable future for generations to come.",
-      icon: IconArrowsRightLeft,
+        "Expanding our impact with initiatives like the Ghana beach cleanup (April 2025) and successful climate movie showings, fostering community involvement and international partnerships.",
+      icon: 'IconWorld',
     },
     {
-      title: 'Custom Buoys',
+      title: 'Securing Our Future: Recent Funding',
       description:
-        'Our custom buoy initiative is revolutionizing the way we collect data about our oceans. By utilizing sensors in our buoys, we are able to capture valuable information and send it directly to national ocean organizations. This data is crucial in helping us better understand and protect our oceans for future generations.',
-      icon: IconBulb,
+        "Proud recipients of $15,000 from the Awesome Foundation and $11,517 in community funding, fueling our conservation efforts and technological development.",
+      icon: 'IconAward',
+    },
+  ],
+};
+
+// Patch Article CTA Section
+export const patchArticleCTA: CallToActionProps = {
+  id: 'patch-article-cta',
+  hasBackground: false,
+  title: 'REEFlect in the News!',
+  subtitle: "Read about our journey and impact in the recent Dublin Patch article detailing our beach cleanups in the Bay Area and Ghana, our smart buoy technology, and community engagement efforts.",
+  callToAction: {
+    text: 'Read the Article',
+    href: 'https://patch.com/california/dublin/dublin-student-nonprofit-helps-clean-beaches-around-bay-ghana',
+    targetBlank: true,
+    icon: 'IconArticle',
+  },
+};
+
+// Research and Innovation Section *******************
+export const featuresResearchAndInnovation: FeaturesProps = {
+  id: 'research-innovation',
+  hasBackground: true,
+  columns: 2,
+  header: {
+    title: 'Pioneering Research & Innovation',
+    subtitle:
+      "REEFlect leverages technology and scientific research to deepen our understanding of marine ecosystems and develop new conservation tools.",
+    tagline: 'R&D',
+  },
+  items: [
+    {
+      title: 'Advanced Coral Metrics',
+      description:
+        "Developing tools (stemming from AIMS internship work) to extract crucial coral health metrics from underwater imagery, aiding in the monitoring and preservation of coral reefs.",
+      icon: 'IconMicroscope',
+    },
+    {
+      title: 'Machine Learning for Oceanography',
+      description:
+        "Exploring the use of ML in oceanographic data analysis, including projects like Gaussian Process for Sea Surface Temperature (SST) prediction, focusing on internal R&D.",
+      icon: 'IconComponents',
     },
   ],
 };
@@ -137,65 +186,76 @@ export const featuresHome: FeaturesProps = {
 // Content data on Home page *******************
 export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',
-  hasBackground: true,
+  hasBackground: false,
   header: {
-    title: 'Project Details',
-    subtitle: 'Specific Information about our Beach Cleanup, Buoy Initiatives, and Ocean Awareness Intiatives',
-    tagline: 'Content',
+    title: 'Our Technological Approach',
+    subtitle: 'Harnessing data and technology for marine conservation.',
+    tagline: 'Technology in Action',
   },
   content:
-    'Our Tech Projects',
+    'REEFlect integrates custom-built hardware like our smart buoys with advanced data analysis techniques, including machine learning, to provide actionable insights for ocean protection. Our open-source approach aims to democratize access to these tools.',
   items: [
     {
-      title: 'Buoy',
+      title: 'Sensor Data Collection & Analysis',
       description:
-        'Our Buoy initiaitve is an initiative where we deploy custom buoys to collect data on the ocean',
+        'Our smart buoys provide real-time data, which is processed and analyzed to monitor marine environments effectively. All buoy data is openly available via <a href="https://www.openoceans.life/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">openoceans.life</a>.',
     },
     {
-      title: 'Ecomonitor AI',
+      title: 'Open Source & Collaboration',
       description:
-        'Eco Monitor AI is a project where we make machine learning accesible to those in the browser to easily predict ecological datapoints based on data that is avalible to the public.',
+        'We believe in collaborative efforts. Our technology is developed with an open-source philosophy, encouraging participation from schools, NGOs, and citizen scientists.',
     },
     {
-      title: 'Deploy',
+      title: 'Democratizing Ocean Data',
       description:
-        'share data and more cool stuff',
+        'A core part of our mission is to make ocean data accessible and understandable, empowering more people to contribute to conservation.',
     },
   ],
   image: {
     src: cameraFrontImg,
-    alt: 'Colorful Image',
+    alt: 'REEFlect Technology',
   },
   isReversed: false,
   isAfterContent: false,
 };
 
-// Content data on Home page *******************
+// Beach Cleanup Focus
 export const contentHomeTwo: ContentProps = {
-  id: 'contentOne-on-home-two',
+  id: 'contentHomeTwo-beach-cleanup',
   hasBackground: true,
+  header: {
+    title: 'Community-Powered Conservation',
+    subtitle: 'Mobilizing volunteers and partners for direct environmental action, from local shores to Ghana.',
+    tagline: 'On-The-Ground Impact',
+  },
   content:
-    'Beach Cleanup Initiative',
+    'Our beach cleanup initiatives, including our recent successful event and climate movie showings in Ghana, demonstrate our commitment to tangible environmental improvement and community engagement. We provide resources and support for local cleanup efforts worldwide.',
   items: [
     {
-      title: 'We want to help keep our beaches clean with the help of other organizations and volunteers',
+      title: 'International Cleanup Efforts',
+      description:
+        'Expanding our reach with events like the Ghana beach cleanup & movie showings, working hand-in-hand with local communities.',
     },
     {
-      title: 'If you want to join us as a volunteer or as a partner, please contact us',
+      title: 'Volunteer Mobilization',
+      description:
+        'Empowering individuals to make a difference through organized and supported cleanup activities.',
     },
     {
-      title: 'We appreciate any help we can get to keep our oceans safe',
+      title: 'Building Local Partnerships',
+      description:
+        'Collaborating with local organizations like Clean Ocean Project Ghana to maximize the impact and sustainability of our conservation projects.',
     },
   ],
   image: {
     src: cameraBackImg,
-    alt: 'Colorful Image',
+    alt: 'Beach Cleanup Activity',
   },
   isReversed: true,
   isAfterContent: true,
 };
 
-// Steps data on Home page *******************
+// Steps data on Home page (Our Approach)
 export const stepsHome: StepsProps = {
   id: 'steps-on-home',
   hasBackground: false,
@@ -203,34 +263,59 @@ export const stepsHome: StepsProps = {
   isImageDisplayed: true,
   image: {
     src: gasImg,
-    alt: 'Steps image',
+    alt: 'REEFlect Process',
   },
   header: {
-    title: 'Raise Global Ocean Awareness',
+    title: 'Our Path to Impact: Educate, Innovate, Act, Secure',
+    subtitle: "A multi-faceted strategy to drive ocean conservation, supported by community and foundation funding."
   },
   items: [
     {
-      title: 'We wrote a book on increase Ocean Awareness to children',
+      title: 'Educate & Inspire',
       description:
-        '',
-      icon: IconArrowDown,
+        "Through books, workshops, and events like our climate movie showings in Ghana, we educate communities about marine ecosystems and conservation.",
+      icon: 'IconMovie',
     },
     {
-      title: 'We plan to present this book to local elementary schools in the area to help teach kids about the environment at a young age',
+      title: 'Innovate with Technology',
       description:
-        '',
-      icon: IconArrowDown,
+        `We develop and deploy open-source technologies like smart buoys to monitor ocean health and make data accessible via <a href="https://www.openoceans.life/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">openoceans.life</a>.`,
+      icon: 'IconRocket',
     },
     {
-      title: 'With Increased Awareness, we hope to increase the number of volunteers and partners we have to help us with our mission',
+      title: 'Mobilize for Action',
       description:
-        '',
-      icon: IconArrowDown,
+        "Organizing global initiatives like beach cleanups and fostering a network of volunteers and partners to create tangible, on-the-ground change.",
+      icon: 'IconUsers',
     },
     {
-      title: 'With the help of our partners and volunteers, we hope to globalize our mission and help raise awareness on a global scale',
+      title: 'Secure & Sustain Growth',
+      description:
+        'Actively seeking and securing funding through grants (e.g., $15k from Awesome Foundation) and community support ($11,517 raised) to sustain and expand our impact.',
+      icon: 'IconCash',
     },
   ],
+};
+
+// Volunteer Call to Action Section
+export const callToActionVolunteer: CallToActionProps = {
+  id: 'cta-volunteer-home',
+  hasBackground: true,
+  title: 'Join Our Wave of Change',
+  subtitle:
+    "REEFlect is powered by passionate volunteers across marketing, engineering, design, and international chapters. We provide structured onboarding and training tracks to help you make a meaningful impact. Fill out our Typeform to get started!",
+  callToAction: {
+    text: 'Become a Volunteer',
+    href: 'https://vke4l91re98.typeform.com/to/HhXKC86e',
+    icon: 'IconUsers',
+    targetBlank: true,
+  },
+  items: [
+    { title: 'Marketing & Outreach' },
+    { title: 'Engineering & Development' },
+    { title: 'Creative & Design' },
+    { title: 'International Chapters Lead' },
+  ]
 };
 
 // Testimonials data on Home page *******************
@@ -238,70 +323,49 @@ export const testimonialsHome: TestimonialsProps = {
   id: 'testimonials-on-home',
   hasBackground: true,
   header: {
-    title: 'What our customers say about us',
-    subtitle:
-      'our beauytiful and hnandsome awesome team members exc.',
+    title: 'Voices from Our Community & Partners',
+    subtitle: 'Hear what people are saying about REEFlect and our impact on ocean conservation.',
   },
   testimonials: [
     {
-      name: 'Tayla Kirsten',
-      job: 'Marketing Manager',
-      testimonial: `I'm impressed by the speed and performance of these templates. My website now loads in the blink of an eye, significantly enhancing my visitors' experience. Thanks to TailNext, my online business is thriving.`,
+      name: 'Srikanth Samy',
+      job: 'Founder, REEFlect',
+      testimonial: `Leading REEFlect\'s charge in ocean conservation through technology has been an incredible journey. Witnessing the deployment of our smart buoys in Ghana and the enthusiasm of our global volunteers is truly inspiring.`,
       image: {
-        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Tayla Kirsten',
+        src: srikanthCleanupImg,
+        alt: 'Srikanth Samy',
       },
-      href: '/',
+      href: '#',
     },
     {
-      name: 'Silver Jordan',
-      job: 'Senior Marketer',
-      testimonial: `I had never found it so easy to customize a website. TailNext's templates are incredibly flexible, and with Tailwind CSS, I've managed to give my website the look and feel I always wanted. Highly recommended!`,
+      name: 'Krishiv Jaini',
+      job: 'Co-Founder, REEFlect',
+      testimonial: `Our open-source smart buoy technology and collaboration with platforms like <a href="https://www.openoceans.life/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">openoceans.life</a> are democratizing ocean data, empowering communities and researchers worldwide. It's exciting to see our tech making a real-world impact.`,
       image: {
-        src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Silver Jordan',
+        src: krishivServicesHeroImg,
+        alt: 'Krishiv Jaini',
       },
-      href: '/',
+      href: '#',
     },
     {
-      name: 'Kelsey Arden',
-      job: 'Co-Founder & CEO',
-      testimonial: `As a beginner in web development, I really needed clear guidance. Tailnext made it possible. I was able to install and customize my website seamlessly, and I'm thrilled with the results!`,
+      name: 'Adi Kaushul',
+      job: 'Chief Engineer, REEFlect',
+      testimonial: `Driving the engineering efforts for REEFlect\'s smart buoys and data platforms has been a rewarding challenge. We\'re committed to building robust, accessible technology for ocean conservation.`,
       image: {
-        src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Kelsey Arden',
+        src: adiPicImg,
+        alt: 'Adi Kaushul',
       },
-      href: '/',
+      href: '#',
     },
     {
-      name: 'Sarah Johnson',
-      job: 'Business Owner',
-      testimonial: `They've not only saved me a ton of time but have also made my websites look incredibly professional. The level of detail and thought that went into designing these templates is truly impressive.`,
+      name: 'Local Partner, Ghana',
+      job: 'Clean Ocean Project Ghana',
+      testimonial: `Partnering with REEFlect for the beach cleanup and climate movie showings was a fantastic experience. Their support and dedication significantly boosted our local conservation efforts and community engagement.`,
       image: {
-        src: 'https://images.unsplash.com/photo-1572417884940-c24659be6068?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Sarah Johnson',
+        src: 'https://images.unsplash.com/photo-1598394103259-8460f15d8878?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80',
+        alt: 'Community Member',
       },
-      href: '/',
-    },
-    {
-      name: 'Keith Young',
-      job: 'Freelance Developer',
-      testimonial: `The clean code and integration with Next.js make my projects a breeze. Plus, the responsive design ensures that my clients' websites look amazing on any device. These templates have become my secret weapon for success!`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1694287877106-ee22f764aef1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Keith Young',
-      },
-      href: '/',
-    },
-    {
-      name: 'Lisa Gordon',
-      job: 'Project Manager',
-      testimonial: `Their templates are not only stunning but also user-friendly. The support I received from their community has been exceptional. I'm proud to say that I've built my dream website with TailNext.`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1665984867752-6370ab5ae35e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Lisa Gordon',
-      },
-      href: '/',
+      href: '#',
     },
   ],
 };
@@ -309,42 +373,45 @@ export const testimonialsHome: TestimonialsProps = {
 // FAQS data on Home page *******************
 export const faqs2Home: FAQsProps = {
   id: 'faqsTwo-on-home',
-  hasBackground: false,
+  hasBackground: true,
   header: {
     title: 'Frequently Asked Questions',
     subtitle:
-      'Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar.',
+      'Find answers to common questions about REEFlect, our projects, and how you can get involved.',
     tagline: 'FAQS',
   },
   items: [
     {
-      title: 'What do I need to start?',
-      description: `Nunc mollis tempor quam, non fringilla elit sagittis in. Nullam vitae consectetur mi, a elementum arcu. Sed laoreet, ipsum et vehicula dignissim, leo orci pretium sem, ac condimentum tellus est quis ligula.`,
+      title: 'What is REEFlect\'s main mission?',
+      description: `REEFlect is a 501(c)(3) non-profit dedicated to ocean conservation through modern technology, research, education, and community action. We focus on developing open-source tools and fostering global collaboration.`,
     },
     {
-      title: 'How to install the NextJS + Tailwind CSS template?',
-      description: `Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer eleifend vestibulum nisl in iaculis. Mauris dictum ac purus vestibulum auctor. Praesent imperdiet lectus et massa faucibus, quis viverra massa rhoncus.`,
+      title: 'How does the Smart Buoy project work?',
+      description: `Our smart buoys collect real-time oceanographic data (like temperature) using low-cost, open-source hardware. This data is shared via platforms like <a href="https://www.openoceans.life/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">openoceans.life</a> to support research and education.`,
     },
     {
-      title: "What's something that you completely don't understand?",
-      description: `Mauris vitae eros a dui varius luctus. Suspendisse rutrum, sapien nec blandit bibendum, justo sapien sollicitudin erat, id aliquam sapien purus quis leo. Aliquam vulputate vestibulum consectetur.`,
+      title: "What kind of volunteer opportunities are available?",
+      description: `We have diverse volunteer tracks including Marketing, Engineering, International Chapter leadership, and Creative/Design roles. Fill out our <a href="https://vke4l91re98.typeform.com/to/HhXKC86e" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Typeform</a> to join!`,
     },
     {
-      title: "What's an example of when you changed your mind?",
-      description: `Nunc dapibus lacinia ipsum ut elementum. Integer in pretium sapien. Ut pretium nisl mauris, ut rutrum justo condimentum id. Etiam aliquet, arcu at iaculis laoreet, est arcu egestas sapien, eget sollicitudin odio orci et nunc.`,
+      title: "How is REEFlect involved in international conservation, like in Africa?",
+      description: `We've expanded our on-the-ground efforts internationally, for example, by organizing beach cleanups, successful climate movie showings in Ghana, and deploying a smart buoy there. We aim to support and collaborate with global communities.`,
     },
     {
-      title: 'What is something that you would really like to try again?',
-      description: `Duis in maximus mauris, id eleifend mauris. Nam a fringilla arcu. Curabitur convallis, tellus non aliquet rhoncus, lacus massa auctor eros, in interdum lectus augue sed augue. Fusce tempor ex id faucibus efficitur.`,
+      title: 'What R&D projects is REEFlect working on?',
+      description: `We're developing tools for coral metric extraction and exploring machine learning applications for oceanographic data, such as SST prediction, to further scientific understanding.`,
     },
     {
-      title: 'If you could only ask one question to each person you meet, what would that question be?',
-      description: `Nullam imperdiet sapien tincidunt erat dapibus faucibus. Vestibulum a sem nec lorem imperdiet scelerisque non sed lacus. Ut pulvinar id diam vitae auctor. Nam tempus, neque et elementum consectetur, ex ipsum pulvinar risus, vel sodales ligula tortor eu eros.`,
+      title: 'How is REEFlect funded?',
+      description: `REEFlect is supported by grants, such as $15,000 from the Awesome Foundation, and significant individual and community contributions totaling over $11,517. These funds are vital for our projects and expansion.`,
     },
-  ],
+  ]
 };
 
 // Pricing data on Home page *******************
+// This section seems less relevant for a non-profit. Consider removing or repurposing for "Donation Tiers" or "Support Us".
+// For now, I will comment it out.
+/*
 export const pricingHome: PricingProps = {
   id: 'pricing-on-home',
   hasBackground: true,
@@ -352,7 +419,6 @@ export const pricingHome: PricingProps = {
     title: 'Prices for each plan',
     subtitle:
       'Proin eget vestibulum sem, vel ultrices ligula. Vestibulum in eleifend lectus, non mollis odio. Donec nibh ipsum, suscipit non pulvinar quis, lobortis ac lorem.',
-    // tagline: 'Pricing',
   },
   prices: [
     {
@@ -433,120 +499,77 @@ export const pricingHome: PricingProps = {
     },
   ],
 };
+*/
 
 // Team data on Home page *******************
+/* // Commenting out teamHome as per request
 export const teamHome: TeamProps = {
   id: 'team-on-home',
   hasBackground: false,
   header: {
-    title: 'Team Members',
+    title: 'Our Leadership',
     subtitle:
-      'our beauytiful and hnandsome awesome team members which is just srikanth',
-    // tagline: 'Team',
+      'Meet the core team driving REEFlect\'s mission forward.',
   },
   teams: [
     {
-      name: 'Cindy Belcher',
-      occupation: 'SEO Consultant',
+      name: 'Srikanth Samy',
+      occupation: 'Founder & Executive Director',
       image: {
-        src: 'https://images.unsplash.com/photo-1534303891689-1fb2f8155c70?q=80&w=3731&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        alt: 'Cindy Belcher',
+        src: srikanthCleanupImg,
+        alt: 'Srikanth Samy',
       },
       items: [
         {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
+          title: 'LinkedIn',
+          icon: 'IconBrandLinkedin',
           href: '#',
         },
         {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
+          title: 'Email',
+          icon: 'IconMail',
+          href: 'mailto:srikanthsamy@reeflect.org',
+        },
+      ],
+    },
+    {
+      name: 'Krishiv Jaini',
+      occupation: 'Co-Founder',
+      image: {
+        src: krishivServicesHeroImg,
+        alt: 'Krishiv Jaini',
+      },
+      items: [
+        {
+          title: 'LinkedIn',
+          icon: 'IconBrandLinkedin',
           href: '#',
         },
         {
-          title: 'Contact by email',
-          icon: IconMail,
+          title: 'Email',
+          icon: 'IconMail',
           href: '#',
         },
       ],
     },
     {
-      name: 'Toby Foster',
-      occupation: 'Marketing Tech',
+      name: 'Adi Kaushul',
+      occupation: 'Chief Engineer',
       image: {
-        src: 'https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2172&q=80',
-        alt: 'Toby Foster',
+        src: adiPicImg,
+        alt: 'Adi Kaushul',
       },
       items: [
         {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Clark Bourne',
-      occupation: 'Content Manager',
-      image: {
-        src: 'https://images.unsplash.com/photo-1639628735078-ed2f038a193e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-        alt: 'Clark Bourne',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Bella Chase',
-      occupation: 'UX Designer',
-      image: {
-        src: 'https://images.unsplash.com/photo-1628260412297-a3377e45006f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-        alt: 'Bella Chase',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
+          title: 'LinkedIn',
+          icon: 'IconBrandLinkedin',
           href: '#',
         },
       ],
     },
   ],
 };
+*/
 
 // Contact data on Home page *******************
 export const contactHome: ContactProps = {
@@ -557,26 +580,26 @@ export const contactHome: ContactProps = {
     tagline: 'Contact',
   },
   content:
-    'We would love to hear from you! Whether you have questions, want to get involved, or are interested in partnering with us, please don’t hesitate to reach out.',
+    "We would love to hear from you! Whether you have questions, want to get involved, or are interested in partnering with us, please don't hesitate to reach out.",
   items: [
     {
       title: 'Our Address',
-      description: ['In Progress'],
-      icon: IconMapPin,
+      description: ['Based in Dublin, CA, with global initiatives.'],
+      icon: 'IconMapPin',
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (925) 503 8351)', 'Mail: srikanth.samy008@gmail.com'],
-      icon: IconPhoneCall,
+      description: ['Email: srikanthsamy@reeflect.org'],
+      icon: 'IconPhoneCall',
     },
     {
-      title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
-      icon: IconClock,
+      title: 'Connect Online',
+      description: ['Follow our journey and updates on social media.'],
+      icon: 'IconUsers',
     },
   ],
   form: {
-    title: 'Ready to Get Started?',
+    title: 'Send Us a Message',
     inputs: [
       {
         type: 'text',
@@ -604,43 +627,26 @@ export const contactHome: ContactProps = {
   },
 };
 
-// CallToAction data *******************
+// CallToAction data (generic one at the bottom, might be removable if new CTAs are better placed)
 export const callToAction2Home: CallToActionProps = {
-  title: 'Next.js + Tailwind CSS',
+  title: 'Support Our Mission',
   subtitle:
-    'Aliquam sodales porttitor lacus ac tristique. Etiam posuere elit at leo feugiat sodales. Sed ac mauris quis sem tempor condimentum non at metus.',
+    'Help us protect our oceans. Your support, whether through volunteering, partnership, or donations, makes a difference.',
   callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
+    text: 'Donate Now',
+    href: '/contact',
+    icon: 'IconDroplet',
   },
   items: [
     {
-      title: 'Get template',
-      description: 'Aliquam sodales est lectus, quis.',
-      href: 'https://github.com/onwidget/tailnext',
+      title: 'Volunteer Your Skills',
+      description: 'Join our team and contribute your expertise.',
+      href: 'https://vke4l91re98.typeform.com/to/HhXKC86e',
     },
     {
-      title: 'Learn more',
-      description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
-      href: '/',
-    },
-    {
-      title: 'Subscribe',
-      description: 'Morbi orci nunc, euismod ac dui id, convallis.',
-      form: {
-        icon: IconMail,
-        input: {
-          type: 'email',
-          name: 'email',
-          autocomplete: 'email',
-          placeholder: 'Enter your email address',
-        },
-        btn: {
-          title: 'Subscribe',
-          type: 'submit',
-        },
-      },
+      title: 'Partner With Us',
+      description: 'Collaborate on projects and initiatives.',
+      href: '/contact',
     },
   ],
 };

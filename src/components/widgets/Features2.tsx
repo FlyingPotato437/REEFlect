@@ -1,3 +1,5 @@
+'use client';
+
 import { FeaturesProps } from '~/shared/types';
 import Headline from '../common/Headline';
 import ItemGrid from '../common/ItemGrid';

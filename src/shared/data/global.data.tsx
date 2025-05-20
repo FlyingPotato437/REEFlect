@@ -25,31 +25,13 @@ export const announcementData: AnnouncementProps = {
 export const headerData: HeaderProps = {
   links: [
     {
-      label: 'Pages',
-      icon: IconChevronDown,
-      links: [
-        {
-          label: 'Services',
-          href: '/services',
-        },
-        {
-          label: 'About us',
-          href: '/about',
-        },
-        {
-          label: 'Contact us',
-          href: '/contact',
-        },
-        {
-          label: 'Terms & Conditions',
-          href: '/terms',
-        },
-        {
-          label: 'Privacy Policy',
-          href: '/privacy',
-        },
-      ],
+      label: 'Home',
+      href: '/',
     },
+    // {
+    //   label: 'Ecomonitor',
+    //   href: '/ecomonitor',
+    // },
     {
       label: 'About Us',
       href: '/about',
@@ -70,7 +52,7 @@ export const headerData: HeaderProps = {
 
 // Footer data
 export const footerData: FooterProps = {
-  title: 'TailNext',
+  title: 'REEFlect',
   links: [
     {
       label: 'Terms & Conditions',
@@ -186,7 +168,7 @@ export const footerData: FooterProps = {
         },
       ],
     },
-  ],
+  ],  
   socials: [
     { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
     { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
@@ -235,12 +217,12 @@ export const footerData2: FooterProps = {
     },
     {
       title: 'Email',
-      texts: ['Office: srikanth.samy008@gmail.com', 'Site: https://reeflect.org'],
+      texts: ['Office: srikanthsamy@reeflect.org', 'Site: https://reeflect.org'],
     },
   ],
   socials: [
     { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
-    { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
+    { label: 'Instagram', icon: IconBrandInstagram, href: 'https://www.instagram.com/reef.lect/' },
     { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
     { label: 'RSS', icon: IconRss, href: '#' },
     { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },

@@ -1,8 +1,9 @@
+'use client';
+
 import { FAQsProps } from '~/shared/types';
 import Headline from '../common/Headline';
 import WidgetWrapper from '../common/WidgetWrapper';
 import ItemGrid from '../common/ItemGrid';
-import { IconArrowDownRight } from '@tabler/icons-react';
 
 const FAQs = ({ header, items, columns, id, hasBackground = false }: FAQsProps) => (
   <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="max-w-6xl">
@@ -11,7 +12,7 @@ const FAQs = ({ header, items, columns, id, hasBackground = false }: FAQsProps) 
       items={items}
       columns={columns}
       defaultColumns={2}
-      defaultIcon={IconArrowDownRight}
+      defaultIcon="IconArrowDownRight"
       containerClass="mt-12"
       panelClass="flex max-w-full"
       titleClass="text-lg font-semibold mb-2"

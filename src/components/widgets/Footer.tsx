@@ -1,3 +1,4 @@
+import React from 'react';
 import { footerData } from '~/shared/data/global.data';
 
 const Footer = () => {
@@ -66,7 +67,7 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-          {footNote}
+          {footNote && typeof footNote !== 'string' ? React.cloneElement(footNote) : footNote}
         </div>
       </div>
     </footer>

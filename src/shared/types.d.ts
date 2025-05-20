@@ -32,7 +32,7 @@ type HeadlineProps = {
   subtitleClass?: string;
 };
 
-type Icon = TablerIcon;
+type Icon = TablerIcon | string;
 
 type CallToActionType = {
   text?: string;

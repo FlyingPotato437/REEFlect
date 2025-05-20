@@ -1,3 +1,5 @@
+'use client';
+
 import Headline from '../common/Headline';
 import { TeamProps } from '~/shared/types';
 import WidgetWrapper from '../common/WidgetWrapper';

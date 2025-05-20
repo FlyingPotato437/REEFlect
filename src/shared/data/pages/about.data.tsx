@@ -1,14 +1,21 @@
 import {
+  CallToActionProps,
   ContactProps,
+  ContentProps,
   FAQsProps,
   FeaturesProps,
   HeroProps,
   StatsProps,
-  StepsProps,
   TeamProps,
   TestimonialsProps,
 } from '~/shared/types';
-import hero2Img from '~/assets/images/71728.jpg';
+// import hero2Img from '~/assets/images/Screenshot 2024-09-22 at 5.02.00 PM.png'; // Commented out for now
+//import krishivimg from '~/assets/images/Screenshot 2024-07-26 at 3.13.17 PM.png';
+//import srikanthimg from '~/assets/images/thegoat.jpeg';
+//import akhilimg from '~/assets/images/akhilpic.png';
+//import aaryanimg from '~/assets/images/newcmopic.png';
+//import adiimg from '~/assets/images/adipic.png';
+//import rohanimg from '~/assets/images/rohanpic.png';
 import {
   IconAdjustments,
   IconAward,
@@ -34,44 +41,67 @@ import {
   IconScale,
   IconThumbUp,
   IconUser,
+  IconWorld,
+  IconMovie,
+  IconCash,
+  IconMicroscope,
+  IconUsers,
+  IconDroplet,
+  IconRocket,
+  IconArticle,
+  IconComponents,
 } from '@tabler/icons-react';
+
+// Image Imports
+import hero2Img from '/Users/srikanthsamy1/Desktop/CodeProjects/REEFlect/tailnext/src/assets/images/Screenshot 2024-09-22 at 5.02.00 PM.png'; // UNCOMMENTED and path corrected with U+202F
+//import hero2ImgPlaceholder from '~/assets/images/girma-nigusse-dnXVrFuM3c8-unsplash.jpg';
+import srikanthCleanupImg from '~/assets/images/SrikanthCleanup.png';
+import krishivServicesHeroImg from '/Users/srikanthsamy1/Desktop/CodeProjects/REEFlect/tailnext/src/assets/images/Screenshot 2024-09-22 at 5.04.44 PM.png'; // Path corrected with U+202F
+import adiPicImg from '~/assets/images/adipic.png';
+// import aaryanimg from '~/assets/images/newcmopic.png'; // Aanya Sheth removed
+import cleanupGenericImg from '~/assets/images/cleanup.png';
+
+// Assuming this one is valid and available as a generic placeholder:
+import genericPlaceholderImg from '~/assets/images/girma-nigusse-dnXVrFuM3c8-unsplash.jpg'; 
 
 // Hero2 data on About page *******************
 export const hero2About: HeroProps = {
-  title: 'Empowering Ocean Conservation Through Technology',
+  title: 'Youth-Led Ocean Innovation for a Planet in Crisis.',
   subtitle:
-    'Reeflect leverages advanced technology and community engagement to monitor and protect ocean health. Join us in making a difference.',
-  tagline: 'About Reeflect',
+    'REEFlect is a student-founded 501(c)(3) nonprofit reshaping how the next generation tackles ocean and climate challenges. Our work is rooted in action—blending science, engineering, and education to create real-world environmental impact.',
+  tagline: 'About REEFlect',
   callToAction: {
-    text: 'Get Involved',
-    href: '/contact',
+    text: 'Join Our Mission',
+    href: 'https://vke4l91re98.typeform.com/to/HhXKC86e',
+    targetBlank: true,
+    icon: 'IconUsers',
   },
   image: {
     src: hero2Img,
-    alt: 'Reeflect Team',
+    alt: 'REEFlect Impact Showcase',
   },
 };
 
 // Stats data on About page *******************
 export const statsAbout: StatsProps = {
   id: 'stats-on-about',
-  hasBackground: true,
+  hasBackground: false,
   items: [
     {
-      title: 1,
-      description: 'Smart Buoys Deployed',
+      title: '$15,000',
+      description: 'Grant from Awesome Foundation',
     },
     {
-      title: 3,
-      description: 'People Engaged',
+      title: '$11,517+',
+      description: 'Raised in Community Funding',
     },
     {
-      title: 3,
-      description: 'Research Partnerships',
+      title: '2+ Countries',
+      description: 'Active projects (USA & Ghana)',
     },
     {
-      title: 0,
-      description: 'Data Points Collected',
+      title: 'Open Data',
+      description: 'Via <a href="https://www.openoceans.life/" target="_blank" rel="noopener noreferrer" class="text-primary-600 dark:text-primary-400 hover:underline">OpenOceans.life</a>',
     },
   ],
 };
@@ -83,7 +113,7 @@ export const featuresFourAbout: FeaturesProps = {
   header: {
     title: 'Our Mission',
     subtitle:
-      'At Reeflect, our mission is to harness technology and community action to protect and preserve ocean health. By deploying smart buoys and raising public awareness, we aim to support scientific research and inspire positive change.',
+      'At REEFlect, our mission is to harness technology and community action to protect and preserve ocean health. By deploying smart buoys and raising public awareness, we aim to support scientific research and inspire positive change.',
     tagline: 'Mission and Values',
   },
 };
@@ -102,71 +132,32 @@ export const featuresFourAboutTwo: FeaturesProps = {
     {
       title: 'Innovation',
       description: 'We embrace cutting-edge technology to solve complex ocean health challenges.',
-      icon: IconBulb,
+      icon: 'IconBulb',
     },
     {
       title: 'Collaboration',
       description: 'We partner with researchers, organizations, and communities to amplify our impact.',
-      icon: IconHeartHandshake,
+      icon: 'IconHeartHandshake',
     },
     {
       title: 'Transparency',
       description: 'We ensure open access to our data and findings to foster trust and accountability.',
-      icon: IconAdjustments,
+      icon: 'IconAdjustments',
     },
     {
       title: 'Education',
       description: 'We empower communities with knowledge to inspire action and stewardship.',
-      icon: IconBook,
+      icon: 'IconBook',
     },
     {
       title: 'Sustainability',
       description: 'We are committed to sustainable practices that protect our oceans for future generations.',
-      icon: IconHomeEco,
+      icon: 'IconHomeEco',
     },
     {
       title: 'Integrity',
       description: 'We uphold the highest standards of ethics and responsibility in all our endeavors.',
-      icon: IconScale,
-    },
-  ],
-};
-
-// Steps data on About page *******************
-export const stepsAbout: StepsProps = {
-  id: 'steps-on-about',
-  hasBackground: true,
-  isImageDisplayed: false,
-  header: {
-    title: 'Our Journey',
-    subtitle: 'Discover the milestones that have shaped Reeflect.',
-    tagline: 'Our Story',
-  },
-  items: [
-    {
-      title: 'Foundation',
-      description: 'Reeflect was founded with a mission to leverage technology for ocean conservation.',
-      icon: IconNumber1,
-    },
-    {
-      title: 'Early Development',
-      description: 'We developed our first prototypes and formed key research partnerships.',
-      icon: IconNumber2,
-    },
-    {
-      title: 'Growth',
-      description: 'We expanded our operations, deploying more smart buoys and engaging more communities.',
-      icon: IconNumber3,
-    },
-    {
-      title: 'Recognition',
-      description: 'Our efforts were recognized with awards for innovation and sustainability.',
-      icon: IconNumber4,
-    },
-    {
-      title: 'Ongoing Commitment',
-      description: 'We continue to innovate and collaborate to protect our oceans.',
-      icon: IconNumber5,
+      icon: 'IconScale',
     },
   ],
 };
@@ -186,32 +177,32 @@ export const features3About: FeaturesProps = {
     {
       title: 'Innovation',
       description: 'We continuously seek new and effective ways to protect our oceans.',
-      icon: IconFlame,
+      icon: 'IconFlame',
     },
     {
       title: 'Collaboration',
       description: 'We believe in the power of teamwork and partnerships.',
-      icon: IconPuzzle2,
+      icon: 'IconPuzzle2',
     },
     {
       title: 'Learning',
       description: 'We promote continuous learning and growth within our team and community.',
-      icon: IconBook,
+      icon: 'IconBook',
     },
     {
       title: 'Community Engagement',
       description: 'We actively involve and educate communities in our mission.',
-      icon: IconCirclesRelation,
+      icon: 'IconCirclesRelation',
     },
     {
       title: 'Design Excellence',
       description: 'We prioritize quality and sustainability in all our projects.',
-      icon: IconPalette,
+      icon: 'IconPalette',
     },
     {
       title: 'Work-Life Balance',
       description: 'We support the well-being of our team members.',
-      icon: IconScale,
+      icon: 'IconScale',
     },
   ],
 };
@@ -231,17 +222,17 @@ export const featuresAbout: FeaturesProps = {
     {
       title: 'Global Recognition',
       description: 'Reeflect has been recognized globally for our innovative approach to ocean conservation.',
-      icon: IconAward,
+      icon: 'IconAward',
     },
     {
       title: 'Innovator of the Year',
       description: 'Our groundbreaking work earned us the Innovator of the Year award.',
-      icon: IconAward,
+      icon: 'IconAward',
     },
     {
       title: 'Sustainability Award',
       description: 'We received the Sustainability Award for our commitment to protecting marine ecosystems.',
-      icon: IconAward,
+      icon: 'IconAward',
     },
   ],
 };
@@ -251,208 +242,62 @@ export const teamAbout: TeamProps = {
   id: 'team-on-about',
   hasBackground: false,
   header: {
-    title: 'Meet Our Team',
-    subtitle:
-      'Our dedicated team is the driving force behind Reeflect.',
+    title: 'Meet Our Leadership Team',
+    subtitle: 'The driving force behind REEFlect\'s vision and execution.',
     tagline: 'Our Team',
   },
   teams: [
     {
-      name: 'John Peterson',
-      occupation: 'Founder & CEO',
+      name: 'Srikanth Samy',
+      occupation: 'Founder & Executive Director',
       image: {
-        src: 'https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'John Peterson',
+        src: srikanthCleanupImg,
+        alt: 'Srikanth Samy',
       },
       items: [
         {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
+          title: 'LinkedIn',
+          icon: 'IconBrandLinkedin',
           href: '#',
         },
         {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
+          title: 'Email',
+          icon: 'IconMail',
+          href: 'mailto:srikanthsamy@reeflect.org',
+        },
+      ],
+    },
+    {
+      name: 'Krishiv Jaini',
+      occupation: 'Co-Founder',
+      image: {
+        src: krishivServicesHeroImg,
+        alt: 'Krishiv Jaini',
+      },
+      items: [
+        {
+          title: 'LinkedIn',
+          icon: 'IconBrandLinkedin',
           href: '#',
         },
         {
-          title: 'Contact by email',
-          icon: IconMail,
+          title: 'Email',
+          icon: 'IconMail',
           href: '#',
         },
       ],
     },
     {
-      name: 'Sarah Mitchell',
-      occupation: 'Chief Creative Officer',
+      name: 'Adi Kaushul',
+      occupation: 'Chief Engineer',
       image: {
-        src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'Sarah Mitchell',
+        src: adiPicImg,
+        alt: 'Adi Kaushul',
       },
       items: [
         {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'David Foster',
-      occupation: 'Chief Technology Officer',
-      image: {
-        src: 'https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=250&q=80',
-        alt: 'David Foster',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Mary Smith',
-      occupation: 'Chief Marketing Officer',
-      image: {
-        src: 'https://images.unsplash.com/photo-1607503873903-c5e95f80d7b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'Mary Smith',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Michael Turner',
-      occupation: 'Chief Financial Officer',
-      image: {
-        src: 'https://images.unsplash.com/photo-1619380061814-58f03707f082?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'Michael Turner',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Laura Adams',
-      occupation: 'Chief Customer Relations Officer',
-      image: {
-        src: 'https://images.unsplash.com/photo-1485893086445-ed75865251e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'Laura Adams',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Robert Williams',
-      occupation: 'Chief Operations Officer',
-      image: {
-        src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'Robert Williams',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Emily Davis',
-      occupation: 'Chief Strategy Officer',
-      image: {
-        src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'Emily Davis',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
+          title: 'LinkedIn',
+          icon: 'IconBrandLinkedin',
           href: '#',
         },
       ],
@@ -466,39 +311,29 @@ export const testimonials2About: TestimonialsProps = {
   hasBackground: true,
   isTestimonialUp: true,
   header: {
-    title: 'Our Success Stories',
-    tagline: 'Community Feedback',
+    title: 'What Our Partners & Community Say',
+    tagline: 'Testimonials',
   },
   testimonials: [
     {
-      name: 'Jane Smith',
-      job: 'Marine Biologist',
-      testimonial: `Reeflect's data has been invaluable for my research. The real-time monitoring system is a game-changer for understanding ocean health.`,
+      name: 'Clean Ocean Project Ghana',
+      job: 'Partner Organization',
+      testimonial: `Collaborating with REEFlect on the beach cleanups and climate movie showings in Accra has been incredibly impactful. Their technological approach and youth-driven energy are inspiring change in our coastal communities.`,
       image: {
-        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Jane Smith',
+        src: 'https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80',
+        alt: 'Ghana Collaboration',
       },
-      href: '/',
+      href: '#',
     },
     {
-      name: 'John Doe',
-      job: 'Environmental Advocate',
-      testimonial: `Reeflect's efforts in raising awareness about ocean pollution have been phenomenal. Their data-driven approach brings much-needed transparency.`,
+      name: 'Awesome Foundation Trustee',
+      job: 'Funding Partner',
+      testimonial: `REEFlect's proposal for their smart buoy technology and community engagement stood out. We are proud to support their innovative work with a $15,000 grant to help protect our oceans.`,
       image: {
-        src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'John Doe',
+        src: 'https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
+        alt: 'Funding Impact',
       },
-      href: '/',
-    },
-    {
-      name: 'Emily Turner',
-      job: 'Community Leader',
-      testimonial: `The workshops conducted by Reeflect have educated our community about the importance of ocean conservation. The impact is visible and inspiring.`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Emily Turner',
-      },
-      href: '/',
+      href: '#',
     },
   ],
 };
@@ -508,34 +343,30 @@ export const faqsAbout: FAQsProps = {
   id: 'faqs-on-about',
   hasBackground: false,
   header: {
-    title: 'Frequently Asked Questions',
-    subtitle: 'Find answers to common questions about our work and mission.',
+    title: 'More About REEFlect',
+    subtitle: 'Answers to common questions about our organization, impact, and how we operate.',
     tagline: 'FAQs',
   },
   items: [
     {
-      title: 'Who we are and what we do?',
-      description: `Reeflect is a non-profit organization dedicated to protecting ocean health through technology and community engagement.`,
+      title: 'What is REEFlect\'s legal status?',
+      description: `REEFlect is a registered 501(c)(3) non-profit organization founded by high school students, committed to marine conservation through technology.`,
     },
     {
-      title: 'What values and principles guide our work?',
-      description: `Our work is guided by innovation, collaboration, transparency, education, sustainability, and integrity.`,
+      title: 'How does REEFlect utilize its funding?',
+      description: `All funding, including grants like the $15,000 from the Awesome Foundation and over $11,517 from community support, directly supports our project deployments (like smart buoys in Ghana), R&D, educational programs, and operational costs for scaling our impact.`,
     },
     {
-      title: 'What is our experience?',
-      description: `Our team comprises experts in marine biology, data science, technology, and community outreach.`,
+      title: 'What are REEFlect\'s key areas of technological innovation?',
+      description: `We focus on open-source smart buoy technology for real-time ocean data (accessible on <a href="https://www.openoceans.life/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">openoceans.life</a>), development of tools for coral metric analysis, and applying machine learning to oceanographic data.`,
     },
     {
-      title: 'What is our team like?',
-      description: `Our team is passionate, dedicated, and committed to making a positive impact on ocean conservation.`,
+      title: 'How can I volunteer or contribute to REEFlect?',
+      description: `We welcome volunteers across various skill sets! You can apply through our <a href="https://vke4l91re98.typeform.com/to/HhXKC86e" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Typeform</a>. We also appreciate donations to help fund our projects.`,
     },
     {
-      title: 'How do we engage with the community?',
-      description: `We conduct workshops, educational programs, and community events to raise awareness and promote sustainable practices.`,
-    },
-    {
-      title: 'What support channels do we offer?',
-      description: `We offer various support channels including email, phone, and social media to assist our community and partners.`,
+      title: 'Where does REEFlect operate?',
+      description: `While founded in Dublin, CA, REEFlect has a global vision and has already initiated projects internationally, such as our comprehensive engagement in Ghana, West Africa, including cleanups, movie showings, and buoy deployment.`,
     },
   ],
 };
@@ -545,61 +376,167 @@ export const contactAbout: ContactProps = {
   id: 'contact-on-about',
   hasBackground: true,
   header: {
-    title: 'Contact Us',
+    title: 'Connect With Us',
+    subtitle: "We're always eager to hear from potential volunteers, partners, and supporters.",
     tagline: 'Get in Touch',
   },
   content:
-    'We would love to hear from you! Whether you have questions, want to get involved, or are interested in partnering with us, please don’t hesitate to reach out.',
+    'Have questions about our projects, volunteering, or how you can support REEFlect? Reach out to us!',
   items: [
     {
-      title: 'Our Address',
-      description: ['123 Ocean Avenue', 'San Francisco, CA, USA'],
-      icon: IconMapPin,
+      title: 'General Inquiries',
+      description: ['Email: srikanthsamy@reeflect.org'],
+      icon: 'IconMail',
     },
     {
-      title: 'Contact',
-      description: ['Phone: +1 (123) 456-7890', 'Email: info@reeflect.org'],
-      icon: IconPhoneCall,
-    },
-    {
-      title: 'Working Hours',
-      description: ['Monday - Friday: 9:00 AM - 5:00 PM', 'Saturday: 10:00 AM - 2:00 PM'],
-      icon: IconClock,
+      title: 'Volunteer Coordination',
+      description: [`Join via: <a href="https://vke4l91re98.typeform.com/to/HhXKC86e" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Typeform Link</a>`],
+      icon: 'IconUsers',
     },
   ],
   form: {
+    title: 'Quick Message',
     inputs: [
-      {
-        type: 'text',
-        label: 'Name',
-        name: 'name',
-        placeholder: 'Introduce your name',
-        autocomplete: 'off',
-      },
-      {
-        type: 'email',
-        label: 'Email Address',
-        name: 'email',
-        placeholder: 'Introduce your email address',
-        autocomplete: 'on',
-      },
+      { type: 'text', label: 'Your Name', name: 'name', placeholder: 'Your Name', autocomplete: 'name' },
+      { type: 'email', label: 'Your Email', name: 'email', placeholder: 'your.email@example.com', autocomplete: 'email' },
     ],
     textarea: {
       cols: 30,
-      rows: 5,
-      label: 'How can we help you?',
+      rows: 4,
+      label: 'Your Message',
       name: 'message',
-      placeholder: 'Write your message...',
+      placeholder: 'How can we help, or how would you like to get involved?',
     },
-    checkboxes: [
-      {
-        label: 'I have read and agree to the privacy policy',
-        value: '',
-      },
-    ],
-    btn: {
-      title: 'Send Message',
-      type: 'submit',
+    btn: { title: 'Send Message', type: 'submit' },
+  },
+};
+
+// New sections
+export const missionAndValuesAbout: FeaturesProps = {
+  id: 'mission-values-about',
+  hasBackground: true,
+  header: {
+    title: 'Our Mission & Core Values',
+    subtitle:
+      "REEFlect is dedicated to reshaping how the next generation tackles ocean and climate challenges. Our work, rooted in action, blends science, engineering, and education to create real-world environmental impact, guided by these core principles:",
+    tagline: 'Guiding Principles',
+  },
+  columns: 3,
+  items: [
+    {
+      title: 'Innovation',
+      description: 'Embracing cutting-edge, open-source technology like our smart buoys to solve complex ocean health challenges.',
+      icon: 'IconBulb',
     },
+    {
+      title: 'Collaboration',
+      description: 'Partnering with researchers, local organizations (e.g., Clean Ocean Project Ghana), and global communities to amplify impact.',
+      icon: 'IconHeartHandshake',
+    },
+    {
+      title: 'Openness & Transparency',
+      description: 'Ensuring open access to data (via <a href="https://www.openoceans.life/" target="_blank" rel="noopener noreferrer" class="text-primary-600 dark:text-primary-400 hover:underline">OpenOceans.life</a>) and findings to foster trust, accountability, and wider participation.',
+      icon: 'IconAdjustments',
+    },
+    {
+      title: 'Education & Engagement',
+      description: 'Empowering communities with knowledge via workshops, film screenings (like in Ghana), and educational programs to inspire stewardship.',
+      icon: 'IconBook',
+    },
+    {
+      title: 'Sustainability',
+      description: 'Committed to sustainable practices and developing low-cost, accessible solutions for long-term ocean protection.',
+      icon: 'IconHomeEco',
+    },
+    {
+      title: 'Youth-Led Action',
+      description: 'Championing bold, youth-driven solutions at the intersection of climate science, education, and equity.',
+      icon: 'IconFlame',
+    },
+  ],
+};
+
+export const globalImpactAbout: FeaturesProps = {
+  id: 'global-impact-about',
+  hasBackground: true,
+  columns: 2,
+  header: {
+    title: 'Global Impact & Recent Highlights',
+    subtitle: "From local shores to international waters, REEFlect is making a tangible difference. Here are some of our key achievements and ongoing efforts, fueled by generous support.",
+    tagline: 'Our Success Stories',
+  },
+  items: [
+    {
+      title: 'Ghana Initiative: Cleanups & Movie Showings',
+      description: "Successfully organized and led beach cleanups in Ghana (April 2025) and hosted engaging climate movie showings, fostering vital community awareness in West Africa.",
+      icon: 'IconWorld',
+    },
+    {
+      title: 'Smart Buoy Deployment in Ghana',
+      description: "Deployed our open-source smart buoy in Ghana, providing real-time ocean data (temperature, etc.) accessible via <a href=\"https://www.openoceans.life/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary-600 dark:text-primary-400 hover:underline\">openoceans.life</a>, empowering local research and education.",
+      icon: 'IconDroplet',
+    },
+    {
+      title: 'Awesome Foundation Grant Recipient',
+      description: "Awarded $15,000 by the Awesome Foundation, recognizing our innovative approach and enabling further development of our conservation projects.",
+      icon: 'IconAward',
+    },
+    {
+      title: 'Strong Community Funding',
+      description: "Raised over $11,517 through dedicated community support and individual contributions, demonstrating widespread belief in our mission.",
+      icon: 'IconCash',
+    },
+  ],
+};
+
+export const researchDevelopmentAbout: FeaturesProps = {
+  id: 'research-development-about',
+  hasBackground: false,
+  columns: 2,
+  header: {
+    title: 'Advancing Marine Science through R&D',
+    subtitle: "Our commitment to innovation extends to dedicated research and development projects aimed at creating new tools for ocean conservation, from AI-driven data analysis to novel sensor technologies.",
+    tagline: 'Tech for Science',
+  },
+  items: [
+    {
+      title: 'Advanced Coral Metrics',
+      description: "Leveraging learnings from an AIMS internship, we are working on tools to analyze underwater imagery and extract key coral health metrics.",
+      icon: 'IconMicroscope',
+    },
+    {
+      title: 'Machine Learning in Oceanography',
+      description: "Exploring applications of Machine Learning, like Gaussian Processes for Sea Surface Temperature (SST) prediction, to enhance oceanographic data analysis from our smart buoy network.",
+      icon: 'IconComponents',
+    },
+  ],
+};
+
+export const volunteerProgramAbout: ContentProps = {
+  id: 'volunteer-program-about',
+  hasBackground: true,
+  header: {
+    title: 'Join Our Dedicated Volunteer Team',
+    subtitle: "REEFlect's impact is amplified by our passionate global volunteers. We've developed structured programs and resources to help you contribute effectively and grow with us.",
+    tagline: 'Get Involved & Make a Difference',
+  },
+  content: `We are building a robust infrastructure to scale our efforts, including dedicated volunteer outreach, comprehensive onboarding tracks (Marketing, Engineering, International Chapters, Creative/Design), and standardized email templates. <a href="https://vke4l91re98.typeform.com/to/HhXKC86e" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Apply via Typeform</a> to connect with a global team of innovators and activists!`,
+  image: {
+    src: cleanupGenericImg,
+    alt: 'REEFlect Volunteers Collaborating'
+  },
+  isReversed: true,
+};
+
+export const patchArticleAboutCTA: CallToActionProps = {
+  id: 'patch-article-about-cta',
+  hasBackground: false,
+  title: 'REEFlect Featured in the Dublin Patch!',
+  subtitle: "Learn more about our roots, local impact, and international efforts in this community spotlight.",
+  callToAction: {
+    text: 'Read Full Article',
+    href: 'https://patch.com/california/dublin/dublin-student-nonprofit-helps-clean-beaches-around-bay-ghana',
+    targetBlank: true,
+    icon: 'IconArticle',
   },
 };

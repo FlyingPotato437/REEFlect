@@ -3,16 +3,16 @@ import type { Metadata } from 'next';
 import { SITE } from '~/config.js';
 
 import Hero from '~/components/widgets/Hero';
-import SocialProof from '../src/components/widgets/SocialProof';
+// import SocialProof from '../src/components/widgets/SocialProof'; // Comment out SocialProof import
 import Features from '~/components/widgets/Features';
 import Content from '~/components/widgets/Content';
 import Steps from '~/components/widgets/Steps';
 import Testimonials from '~/components/widgets/Testimonials';
 import FAQs2 from '~/components/widgets/FAQs2';
-import Pricing from '~/components/widgets/Pricing';
-import Team from '~/components/widgets/Team';
-import CallToAction2 from '~/components/widgets/CallToAction2';
+// import Team from '~/components/widgets/Team'; // Commented out as per request
 import Contact from '~/components/widgets/Contact';
+import CallToAction from '~/components/widgets/CallToAction';
+
 import {
   callToAction2Home,
   contactHome,
@@ -20,12 +20,13 @@ import {
   contentHomeTwo,
   faqs2Home,
   featuresHome,
+  featuresResearchAndInnovation,
   heroHome,
-  pricingHome,
-  socialProofHome,
+  // socialProofHome, // Comment out socialProofHome import
   stepsHome,
-  teamHome,
+  // teamHome, // Commented out as per request
   testimonialsHome,
+  callToActionVolunteer,
 } from '~/shared/data/pages/home.data';
 
 export const metadata: Metadata = {
@@ -36,12 +37,18 @@ export default function Page() {
   return (
     <>
       <Hero {...heroHome} />
+      {/* <SocialProof {...socialProofHome} /> */}{/* Comment out SocialProof component usage */}
       <Features {...featuresHome} />
       <Content {...contentHomeOne} />
+      <Features {...featuresResearchAndInnovation} />
       <Content {...contentHomeTwo} />
       <Steps {...stepsHome} />
-      <Team {...teamHome} />
+      <Testimonials {...testimonialsHome} />
+      <FAQs2 {...faqs2Home} />
+      <CallToAction {...callToActionVolunteer} />
+      {/* <Team {...teamHome} /> */}{/* Commented out as per request */}
       <Contact {...contactHome} />
+      <CallToAction {...callToAction2Home} />
     </>
   );
 }

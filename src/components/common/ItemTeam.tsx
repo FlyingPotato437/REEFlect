@@ -1,6 +1,23 @@
+'use client';
+
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
-import { Team } from '~/shared/types';
+import { Team as TeamType } from '~/shared/types';
+import {
+  IconBrandLinkedin,
+  IconMail,
+  IconBrandTwitter,
+  IconBrandFacebook,
+  IconBrandInstagram,
+} from '@tabler/icons-react';
+
+const iconMap: { [key: string]: React.ElementType } = {
+  IconBrandLinkedin,
+  IconMail,
+  IconBrandTwitter,
+  IconBrandFacebook,
+  IconBrandInstagram,
+};
 
 const ItemTeam = ({
   name,
@@ -13,7 +30,7 @@ const ItemTeam = ({
   nameClass,
   occupationClass,
   itemsClass,
-}: Team) => {
+}: TeamType) => {
   return (
     <div className={twMerge('', containerClass)}>
       <Image src={image.src} width={240} height={320} alt={image.alt} className={twMerge('', imageClass)} />
@@ -22,9 +39,13 @@ const ItemTeam = ({
         <p className={twMerge('', occupationClass)}>{occupation}</p>
         <ul className={twMerge('', itemsClass)}>
           {items &&
-            items.map(
-              ({ title, href, icon: Icon }, index2) =>
-                Icon &&
+            items.map(({ title, href, icon: itemIcon }, index2) => {
+              const IconComponent = typeof itemIcon === 'string'
+                ? iconMap[itemIcon]
+                : (typeof itemIcon === 'function' ? itemIcon : null);
+
+              return (
+                IconComponent &&
                 href && (
                   <li
                     key={`team-${index2}`}
@@ -37,11 +58,12 @@ const ItemTeam = ({
                       aria-label={title as string}
                       className="flex items-center justify-center rounded-sm bg-transparent p-0.5 text-primary-900 hover:bg-primary-900 hover:text-slate-200 hover:dark:bg-slate-800 hover:dark:text-slate-200"
                     >
-                      <Icon className="h-6 w-6 p-0.5" />
+                      <IconComponent className="h-6 w-6 p-0.5" />
                     </a>
                   </li>
-                ),
-            )}
+                )
+              );
+            })}
         </ul>
       </div>
     </div>

@@ -6,6 +6,8 @@ import {
   IconComponents,
   IconListCheck,
   IconRocket,
+  IconMovie,
+  IconAward,
 } from '@tabler/icons-react';
 
 import {
@@ -17,18 +19,18 @@ import {
   TestimonialsProps,
 } from '~/shared/types';
 
-import heroImg from '~/assets/images/photo-1595902392285-46fccaab598a_q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.jpg';
-import cameraFrontImg from '~/assets/images/IMG_5297_edited.png';
-import cameraBackImg from '~/assets/images/71728_edited.png';
+import heroImg from '~/assets/images/Screenshot 2024-09-22 at 5.04.44 PM.png';
+import cameraFrontImg from '~/assets/images/Screenshot 2024-09-22 at 4.59.58 PM.png';
+import cameraBackImg from '~/assets/images/Screenshot 2024-09-22 at 5.05.26 PM.png';
 
 // Hero data on Services page *******************
 export const heroServices: HeroProps = {
-  title: 'Pojects at REEFlect',
+  title: 'Services at REEFlect', 
   subtitle:
-    'REEFlect has many impactful projects. Here is some key information on them.',
+    'REEFlect has many services to offer to partnering organizations. These are a few ways we can help',
   callToAction: {
     text: 'Start Exploring',
-    href: 'https://reeflect.org/Services',
+    href: '/services',
     targetBlank: true,
   },
   image: {
@@ -41,39 +43,29 @@ export const heroServices: HeroProps = {
 export const features2Services: FeaturesProps = {
   id: 'featuresTwo-on-services',
   header: {
-    title: 'Our Services',
+    title: 'Our Core Services',
+    subtitle: "REEFlect offers a suite of services leveraging technology and community engagement for ocean conservation, supported by grants and public funding.",
   },
   items: [
     {
       title: 'Real-Time Ocean Monitoring',
-      description: 'Utilizing advanced sensors and smart buoys to monitor ocean health parameters in real-time.',
-      icon: IconBrandTailwind,
+      description: 'Utilizing advanced sensors and smart buoys (like those deployed in Ghana) to monitor ocean health parameters in real-time. Data shared via <a href="https://www.openoceans.life/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">openoceans.life</a>.',
+      icon: 'IconBrandTailwind',
     },
     {
-      title: 'Data Analytics and Visualization',
-      description: 'Providing comprehensive data analysis and visualization tools to interpret ocean health data.',
-      icon: IconComponents,
+      title: 'Data Analytics & Visualization',
+      description: 'Providing comprehensive data analysis and visualization tools to interpret ocean health data from our global buoy network.',
+      icon: 'IconComponents',
     },
     {
-      title: 'Community Engagement Programs',
-      description: 'Organizing workshops and educational programs to raise awareness and promote ocean conservation such as our Childrens Book.',
-      icon: IconListCheck,
+      title: 'Community Engagement & Education',
+      description: 'Organizing workshops, educational programs (e.g., our Childrens Book), and impactful events like climate movie showings in Ghana to raise awareness.',
+      icon: 'IconMovie',
     },
     {
-      title: 'Research Partnerships',
-      description: 'Collaborating with research institutions to enhance our understanding of ocean health.',
-      icon: IconRocket,
-    },
-    {
-      title: 'Public Awareness Campaigns',
-      description:
-        'Launching campaigns to inform the public about the importance of protecting our oceans.',
-      icon: IconArrowsRightLeft,
-    },
-    {
-      title: 'Innovation and Technology Development',
-      description: 'Continuously developing and implementing new technologies to improve ocean conservation efforts.',
-      icon: IconBulb,
+      title: 'Research Partnerships & Support',
+      description: 'Collaborating with research institutions to enhance our understanding of ocean health and providing access to our open-source technologies and data.',
+      icon: 'IconRocket',
     },
   ],
 };
@@ -146,9 +138,9 @@ export const features4Services: FeaturesProps = {
   hasBackground: true,
   columns: 2,
   header: {
-    title: 'Main Features',
+    title: 'Technology & Impact Showcase',
     subtitle:
-      'Reeflect offers a range of services designed to monitor, analyze, and protect ocean health through innovative technology and community engagement.',
+      'Explore the capabilities of our open-source smart buoys and the tangible results of our global conservation efforts, including our work in Ghana.',
   },
   isImageDisplayed: true,
   image: {
@@ -157,35 +149,24 @@ export const features4Services: FeaturesProps = {
   },
   items: [
     {
-      title: 'Real-Time Ocean Monitoring',
-      description: 'Utilizing advanced sensors and smart buoys to monitor ocean health parameters in real-time.',
-      icon: IconBrandTailwind,
+      title: 'Open-Source Smart Buoys',
+      description: 'Deployed in locations like Ghana, our buoys provide continuous, real-time data (temperature, pH, etc.) accessible on <a href="https://www.openoceans.life/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">openoceans.life</a>.',
+      icon: 'IconDroplet',
     },
     {
-      title: 'Data Analytics and Visualization',
-      description: 'Providing comprehensive data analysis and visualization tools to interpret ocean health data.',
-      icon: IconComponents,
+      title: 'Community-Driven Data',
+      description: 'Empowering local schools, NGOs, and citizen scientists with low-cost tools for marine research and education.',
+      icon: 'IconUsers',
     },
     {
-      title: 'Community Engagement Programs',
-      description: 'Organizing workshops and educational programs to raise awareness and promote ocean conservation.',
-      icon: IconListCheck,
+      title: 'Successful Ghana Climate Awareness',
+      description: 'Our climate movie showings in Ghana, alongside beach cleanups, have significantly boosted local engagement and conservation dialogue.',
+      icon: 'IconFilm',
     },
     {
-      title: 'Research Partnerships',
-      description: 'Collaborating with research institutions to enhance our understanding of ocean health.',
-      icon: IconRocket,
-    },
-    {
-      title: 'Public Awareness Campaigns',
-      description:
-        'Launching campaigns to inform the public about the importance of protecting our oceans.',
-      icon: IconArrowsRightLeft,
-    },
-    {
-      title: 'Innovation and Technology Development',
-      description: 'Continuously developing and implementing new technologies to improve ocean conservation efforts.',
-      icon: IconBulb,
+      title: 'Funded for Impact',
+      description: 'Supported by organizations like the Awesome Foundation ($15k) and community donations (over $11.5k), enabling wider deployment and R&D.',
+      icon: 'IconAward',
     },
   ],
 };
@@ -253,27 +234,27 @@ export const faqsServices: FAQsProps = {
     {
       title: 'What services does Reeflect offer?',
       description: `Reeflect offers real-time ocean monitoring, data analytics and visualization, community engagement programs, research partnerships, public awareness campaigns, and continuous innovation in technology development.`,
-      icon: IconChevronsRight,
+      icon: 'IconChevronsRight',
     },
     {
       title: 'How can I get involved with Reeflect?',
       description: `You can get involved by participating in our community programs, attending our workshops, volunteering, or partnering with us for research and conservation initiatives.`,
-      icon: IconChevronsRight,
+      icon: 'IconChevronsRight',
     },
     {
       title: 'How does Reeflect collect ocean data?',
       description: `We deploy smart buoys equipped with advanced sensors that collect real-time data on various ocean health parameters such as temperature, pH, salinity, and pollutants.`,
-      icon: IconChevronsRight,
+      icon: 'IconChevronsRight',
     },
     {
       title: 'How is the collected data used?',
       description: `The collected data is analyzed and visualized to provide insights into ocean health. It is used for scientific research, public awareness campaigns, and to inform policy-making for ocean conservation.`,
-      icon: IconChevronsRight,
+      icon: 'IconChevronsRight',
     },
     {
       title: 'How does Reeflect ensure data accuracy?',
       description: `We use state-of-the-art sensors and rigorous data validation methods to ensure the accuracy and reliability of the data we collect.`,
-      icon: IconChevronsRight,
+      icon: 'IconChevronsRight',
     },
   ],
 };
