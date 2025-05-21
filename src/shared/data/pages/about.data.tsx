@@ -88,12 +88,8 @@ export const statsAbout: StatsProps = {
   hasBackground: false,
   items: [
     {
-      title: '$15,000',
-      description: 'Grant from Awesome Foundation',
-    },
-    {
-      title: '$11,517+',
-      description: 'Raised in Community Funding',
+      title: 'Over $15,000',
+      description: 'Secured from sources including the Awesome Foundation & 1517 Fund',
     },
     {
       title: '2+ Countries',
@@ -354,7 +350,7 @@ export const faqsAbout: FAQsProps = {
     },
     {
       title: 'How does REEFlect utilize its funding?',
-      description: `All funding, including grants from organizations like the Awesome Foundation and significant community support, directly supports our project deployments (like smart buoys in Ghana), R&D, educational programs, and operational costs for scaling our impact.`,
+      description: `All funding, including support from key sources like the Awesome Foundation and 1517 Fund, directly supports our project deployments (like smart buoys in Ghana), R&D, educational programs, and operational costs for scaling our impact.`,
     },
     {
       title: 'What are REEFlect\'s key areas of technological innovation?',
@@ -477,14 +473,9 @@ export const globalImpactAbout: FeaturesProps = {
       icon: 'IconDroplet',
     },
     {
-      title: 'Awesome Foundation Grant Recipient',
-      description: "Awarded $15,000 by the Awesome Foundation, recognizing our innovative approach and enabling further development of our conservation projects.",
+      title: 'Key Funding Secured',
+      description: "Received over $15,000 in vital funding from sources including the Awesome Foundation and 1517 Fund, enabling our project development and expansion.",
       icon: 'IconAward',
-    },
-    {
-      title: 'Strong Community Funding',
-      description: "Raised over $11,517 through dedicated community support and individual contributions, demonstrating widespread belief in our mission.",
-      icon: 'IconCash',
     },
   ],
 };

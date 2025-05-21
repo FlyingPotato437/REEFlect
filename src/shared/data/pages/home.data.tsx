@@ -136,7 +136,7 @@ export const featuresHome: FeaturesProps = {
     {
       title: 'Securing Our Future: Recent Funding',
       description:
-        "yo we have raised over 15k from various sources such as Awesome Foundation, and 1517 Fund",
+        "We\'ve secured over $15,000 in funding from key sources including the Awesome Foundation and 1517 Fund, fueling our conservation efforts and technological development.",
       icon: 'IconAward',
     },
   ],
