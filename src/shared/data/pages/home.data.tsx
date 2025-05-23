@@ -52,32 +52,33 @@ import gasImg from '~/assets/images/OceansCry.png';
 export const heroHome: HeroProps = {
   title: (
     <>
-      REEFlect <span className="hidden md:inline"></span> <span></span>{' '}
-      <span className="sm:whitespace-nowrap"></span>
+      REEFlect
     </>
   ),
   subtitle: (
     <>
-      <span className="hidden md:inline">
-        <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
+      <span className="md:inline">
+        <span className="font-medium">
+          Protecting our oceans through innovative technology.
         </span>{' '}
-        A High Schooler led 501(c)(3) non profit to help take care of our oceans using modern technology <em></em><em></em>
+        A student-led 501(c)(3) nonprofit deploying smart buoys, conducting global beach cleanups, and democratizing ocean data to drive meaningful marine conservation.
       </span>{' '}
     </>
   ),
+  tagline: 'Ocean Conservation Technology',
   callToAction: {
-    text: 'Get Involved',
+    text: 'Join Our Mission',
     href: 'https://vke4l91re98.typeform.com/to/HhXKC86e',
     targetBlank: true,
     icon: 'IconUsers',
   },
   callToAction2: {
-    text: 'Learn more',
-    href: '/about',
+    text: 'Explore Our Work',
+    href: '#features-on-home',
   },
   image: {
     src: heroImgHome,
-    alt: 'Hero REEFlect',
+    alt: 'REEFlect Smart Buoy Technology in Action',
   },
 };
 
