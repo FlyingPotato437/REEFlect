@@ -83,7 +83,7 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 }, // Start hidden and slightly down
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }, // Animate to visible and original position
+  show: { opacity: 1, y: 0 }, // Animate to visible and original position
 };
 
 const ItemGrid = ({
