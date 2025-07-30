@@ -88,12 +88,12 @@ export const statsAbout: StatsProps = {
   hasBackground: false,
   items: [
     {
-      title: 'Over $15,000',
-      description: 'Secured from sources including the Awesome Foundation & 1517 Fund',
+      title: '$12,000',
+      description: 'Secured funding including $11k from 1517 Fund & $1k from COPG collaboration',
     },
     {
-      title: '2+ Countries',
-      description: 'Active projects (USA & Ghana)',
+      title: '3+ Countries',
+      description: 'Active projects (USA, Ghana & Mozambique)',
     },
     {
       title: 'Open Data',
@@ -283,21 +283,7 @@ export const teamAbout: TeamProps = {
         },
       ],
     },
-    {
-      name: 'Adi Kaushul',
-      occupation: 'Chief Engineer',
-      image: {
-        src: adiPicImg,
-        alt: 'Adi Kaushul',
-      },
-      items: [
-        {
-          title: 'LinkedIn',
-          icon: 'IconBrandLinkedin',
-          href: '#',
-        },
-      ],
-    },
+
   ],
 };
 
@@ -314,23 +300,14 @@ export const testimonials2About: TestimonialsProps = {
     {
       name: 'Clean Ocean Project Ghana',
       job: 'Partner Organization',
-      testimonial: `Collaborating with REEFlect on the beach cleanups and climate movie showings in Accra has been incredibly impactful. Their technological approach and youth-driven energy are inspiring change in our coastal communities.`,
+      testimonial: `Our partnership with REEFlect has been transformative. Together we've organized impactful beach cleanups in Ghana and the United States, combining our on-ground expertise with their innovative technology approach. Their youth-driven energy is inspiring real change in coastal communities globally.`,
       image: {
         src: 'https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80',
         alt: 'Ghana Collaboration',
       },
       href: '#',
     },
-    {
-      name: 'Awesome Foundation Trustee',
-      job: 'Funding Partner',
-      testimonial: `REEFlect\'s proposal for their smart buoy technology and community engagement stood out. We are proud to support their innovative work to help protect our oceans.`,
-      image: {
-        src: 'https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
-        alt: 'Funding Impact',
-      },
-      href: '#',
-    },
+
   ],
 };
 
@@ -350,19 +327,19 @@ export const faqsAbout: FAQsProps = {
     },
     {
       title: 'How does REEFlect utilize its funding?',
-      description: `All funding, including support from key sources like the Awesome Foundation and 1517 Fund, directly supports our project deployments (like smart buoys in Ghana), R&D, educational programs, and operational costs for scaling our impact.`,
+      description: `All funding, including $11k from the 1517 Fund and $1k from our COPG collaboration, directly supports our project deployments (like smart buoys in Ghana), R&D, educational programs, and operational costs for scaling our impact.`,
     },
     {
       title: 'What are REEFlect\'s key areas of technological innovation?',
-      description: `We focus on open-source smart buoy technology for real-time ocean data (accessible on <a href="https://www.openoceans.life/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">openoceans.life</a>), development of tools for coral metric analysis, and applying machine learning to oceanographic data.`,
+      description: `We focus on open-source smart buoy technology with LoRa communication and Raspberry Pi base stations for real-time ocean data (accessible on <a href="https://www.openoceans.life/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">openoceans.life</a>), and applying machine learning to oceanographic data.`,
     },
     {
       title: 'How can I volunteer or contribute to REEFlect?',
-      description: `We welcome volunteers across various skill sets! You can apply through our <a href="https://vke4l91re98.typeform.com/to/HhXKC86e" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Typeform</a>. We also appreciate donations to help fund our projects.`,
+      description: `We are building a robust infrastructure to scale our efforts, including dedicated volunteer outreach, comprehensive onboarding tracks (Marketing, Engineering, International Chapters, Creative/Design), and standardized email templates. <a href="https://vke4l91re98.typeform.com/to/HhXKC86e" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Apply via Typeform</a> to connect with a global team of innovators and activists!`,
     },
     {
       title: 'Where does REEFlect operate?',
-      description: `While founded in Dublin, CA, REEFlect has a global vision and has already initiated projects internationally, such as our comprehensive engagement in Ghana, West Africa, including cleanups, movie showings, and buoy deployment.`,
+      description: `While founded in Dublin, CA, REEFlect has a global vision with projects internationally, including comprehensive engagement in Ghana (cleanups, movie showings, buoy deployment), US beach cleanups with COPG, and mangrove reforestation in Mozambique with WFP and Planet Multiservices (PMS).`,
     },
   ],
 };
@@ -474,8 +451,13 @@ export const globalImpactAbout: FeaturesProps = {
     },
     {
       title: 'Key Funding Secured',
-      description: "Received over $15,000 in vital funding from sources including the Awesome Foundation and 1517 Fund, enabling our project development and expansion.",
+      description: "Secured $12,000 in vital funding including $11k from the 1517 Fund and $1k from our COPG collaboration, enabling project development and expansion.",
       icon: 'IconAward',
+    },
+    {
+      title: 'Mozambique Mangrove Restoration',
+      description: "Partnering with the World Food Programme (WFP) and Planet Multiservices (PMS), a local NPO in Mozambique, on mangrove reforestation initiatives to protect coastal ecosystems and support community resilience.",
+      icon: 'IconHomeEco',
     },
   ],
 };

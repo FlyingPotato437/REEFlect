@@ -59,7 +59,7 @@ export const features2Services: FeaturesProps = {
     },
     {
       title: 'Community Engagement & Education',
-      description: 'Organizing workshops, educational programs (e.g., our Childrens Book), and impactful events like climate movie showings in Ghana to raise awareness.',
+      description: 'Organizing workshops, our Coasted Africa youth marine science curriculum (adapted for schools in Ghana and Mozambique), and impactful climate movie showings in partnership with Plastic Oceans to raise awareness.',
       icon: 'IconMovie',
     },
     {

@@ -46,7 +46,8 @@ import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
 import cameraFrontImg from '~/assets/images/girma-nigusse-dnXVrFuM3c8-unsplash.jpg';
 import cameraBackImg from '~/assets/images/Screenshot 2024-09-22 at 4.57.57 PM.png';
-import gasImg from '~/assets/images/OceansCry.png';
+import coastedAfricaImg from '~/assets/images/coasted-africa-curriculum.png';
+import smartBuoyImg from '~/assets/images/smart-buoy-2025.png';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
@@ -122,21 +123,21 @@ export const featuresHome: FeaturesProps = {
   },
   items: [
     {
-      title: 'Smart Buoy Deployment',
+      title: 'Smart Buoy Development',
       description:
-        `Successfully deployed in Ghana, our smart buoys collect real-time sensor data. Designed to be open-source and low-cost for schools & NGOs. Data is openly shared via <a href="https://www.openoceans.life/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">openoceans.life</a>.`,
+        `Currently building our smart buoy for Ghana deployment, featuring LoRa communication and Raspberry Pi base stations. Designed to be open-source and low-cost for schools & NGOs. Data will be openly shared via <a href="https://www.openoceans.life/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">openoceans.life</a>.`,
       icon: 'IconDroplet',
     },
     {
       title: 'Global Outreach & Engagement',
       description:
-        "Expanding our impact with initiatives like the Ghana beach cleanup (April 2025) and successful climate movie showings, fostering community involvement and international partnerships.",
+        "Expanding our impact through strategic partnerships like COPG, with beach cleanups in both Ghana and the United States, successful climate movie showings, and our new Mozambique mangrove reforestation project with WFP and Planet Multiservices (PMS).",
       icon: 'IconWorld',
     },
     {
       title: 'Securing Our Future: Recent Funding',
       description:
-        "We\'ve secured over $15,000 in funding from key sources including the Awesome Foundation and 1517 Fund, fueling our conservation efforts and technological development.",
+        "We\'ve secured $12,000 in funding including $11k from the 1517 Fund and $1k from our COPG collaboration, fueling our conservation efforts and technological development.",
       icon: 'IconAward',
     },
   ],
@@ -169,10 +170,10 @@ export const featuresResearchAndInnovation: FeaturesProps = {
   },
   items: [
     {
-      title: 'Advanced Coral Metrics',
+      title: 'Smart Buoy Infrastructure',
       description:
-        "Developing tools (stemming from AIMS internship work) to extract crucial coral health metrics from underwater imagery, aiding in the monitoring and preservation of coral reefs.",
-      icon: 'IconMicroscope',
+        "Developing robust smart buoy systems with LoRa communication technology and Raspberry Pi base stations for reliable data collection and transmission. Our open-source ocean data aims to make marine information freely accessible.",
+      icon: 'IconComponents',
     },
     {
       title: 'Machine Learning for Oceanography',
@@ -212,8 +213,8 @@ export const contentHomeOne: ContentProps = {
     },
   ],
   image: {
-    src: cameraFrontImg,
-    alt: 'REEFlect Technology',
+    src: smartBuoyImg,
+    alt: 'REEFlect Smart Buoy Technology',
   },
   isReversed: false,
   isAfterContent: false,
@@ -262,8 +263,8 @@ export const stepsHome: StepsProps = {
   isReversed: false,
   isImageDisplayed: true,
   image: {
-    src: gasImg,
-    alt: 'REEFlect Process',
+    src: coastedAfricaImg,
+    alt: 'Coasted Africa Curriculum',
   },
   header: {
     title: 'Our Path to Impact: Educate, Innovate, Act, Secure',
@@ -273,7 +274,7 @@ export const stepsHome: StepsProps = {
     {
       title: 'Educate & Inspire',
       description:
-        "Through books, workshops, and events like our climate movie showings in Ghana, we educate communities about marine ecosystems and conservation.",
+        "Through our Coasted Africa youth marine science curriculum, workshops, and climate movie showings in partnership with Plastic Oceans, we educate communities about marine ecosystems and conservation.",
       icon: 'IconMovie',
     },
     {
@@ -399,11 +400,11 @@ export const faqs2Home: FAQsProps = {
     },
     {
       title: 'What R&D projects is REEFlect working on?',
-      description: `We're developing tools for coral metric extraction and exploring machine learning applications for oceanographic data, such as SST prediction, to further scientific understanding.`,
+      description: `We're developing smart buoy infrastructure with LoRa communication and Raspberry Pi base stations, and exploring machine learning applications for oceanographic data, such as SST prediction, to further scientific understanding.`,
     },
     {
       title: 'How is REEFlect funded?',
-      description: `REEFlect is supported by grants, such as $15,000 from the Awesome Foundation, and significant individual and community contributions totaling over $11,517. These funds are vital for our projects and expansion.`,
+      description: `REEFlect is supported by $12,000 in funding including $11k from the 1517 Fund and $1k from our COPG collaboration. These funds are vital for our projects and expansion.`,
     },
   ]
 };
