@@ -245,7 +245,7 @@ export const teamAbout: TeamProps = {
   teams: [
     {
       name: 'Srikanth Samy',
-      occupation: 'Founder & Executive Director',
+      occupation: 'Co-Founder',
       image: {
         src: srikanthCleanupImg,
         alt: 'Srikanth Samy',
