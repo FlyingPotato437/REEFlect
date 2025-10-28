@@ -330,7 +330,7 @@ export const testimonialsHome: TestimonialsProps = {
   testimonials: [
     {
       name: 'Srikanth Samy',
-      job: 'Founder, REEFlect',
+      job: 'Co-Founder, REEFlect',
       testimonial: `Leading REEFlect\'s charge in ocean conservation through technology has been an incredible journey. Witnessing the deployment of our smart buoys in Ghana and the enthusiasm of our global volunteers is truly inspiring.`,
       image: {
         src: srikanthCleanupImg,
@@ -515,7 +515,7 @@ export const teamHome: TeamProps = {
   teams: [
     {
       name: 'Srikanth Samy',
-      occupation: 'Founder & Executive Director',
+      occupation: 'Co-Founder',
       image: {
         src: srikanthCleanupImg,
         alt: 'Srikanth Samy',
