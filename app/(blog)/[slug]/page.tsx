@@ -1,15 +1,28 @@
 import md from 'markdown-it';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 
 import { findPostBySlug, findLatestPosts } from '~/utils/posts';
 
+interface Post {
+  slug: string;
+  title: string;
+  description: string;
+  excerpt?: string;
+  image?: string;
+  publishDate: string;
+  content: string;
+  tags?: string[];
+}
+
 export const dynamicParams = false;
 
-const getFormattedDate = (date) => date;
+const getFormattedDate = (date: string) => date;
 
-export async function generateMetadata({ params}) {
-  const post = await findPostBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const post = await findPostBySlug(slug) as Post | null;
   if (!post) {
     return notFound();
   }
@@ -17,11 +30,13 @@ export async function generateMetadata({ params}) {
 }
 
 export async function generateStaticParams() {
-  return (await findLatestPosts()).map(({ slug }) => ({ slug }));
+  const posts = await findLatestPosts() as Post[];
+  return posts.map(({ slug }) => ({ slug }));
 }
 
-export default async function Page({ params }) {
-  const post = await findPostBySlug(params.slug);
+export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = await findPostBySlug(slug) as Post | null;
 
   if (!post) {
     return notFound();
