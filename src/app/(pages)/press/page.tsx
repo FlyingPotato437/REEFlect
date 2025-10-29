@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -81,10 +82,14 @@ export default function PressPage() {
           {/* NBC Bay Area Coverage */}
           <article className="flex flex-col items-start">
             <div className="relative w-full">
-              <img
+              <Image
                 className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                 src="/assets/press/nbc-cover.jpg"
                 alt="NBC Bay Area coverage"
+                width={1280}
+                height={720}
+                sizes="(max-width: 1024px) 100vw, 33vw"
+                priority
               />
               <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
             </div>
@@ -114,10 +119,13 @@ export default function PressPage() {
           {/* Digital Journal Coverage */}
           <article className="flex flex-col items-start">
             <div className="relative w-full">
-              <img
+              <Image
                 className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                 src="/assets/press/digital-journal-cover.jpg"
                 alt="Digital Journal coverage"
+                width={1280}
+                height={720}
+                sizes="(max-width: 1024px) 100vw, 33vw"
               />
               <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
             </div>
@@ -147,10 +155,13 @@ export default function PressPage() {
           {/* Patch Coverage */}
           <article className="flex flex-col items-start">
             <div className="relative w-full">
-              <img
+              <Image
                 className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                 src="/assets/press/patch-cover.jpg"
                 alt="Dublin Patch coverage"
+                width={1280}
+                height={720}
+                sizes="(max-width: 1024px) 100vw, 33vw"
               />
               <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
             </div>
